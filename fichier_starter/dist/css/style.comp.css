@@ -1,0 +1,6 @@
+.ziko__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  text-align: center; }
+  .ziko__grid img {
+    width: 60%; }

@@ -1,0 +1,15 @@
+.ziko{
+    
+    
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(3 , 33.33%);
+        text-align: center;
+        img{
+            width: 60%;
+        }
+        
+
+       
+    }
+}
