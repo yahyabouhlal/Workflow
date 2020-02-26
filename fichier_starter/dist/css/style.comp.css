@@ -1,0 +1,27 @@
+.ziko__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  text-align: center; }
+  .ziko__grid--maison {
+    background-color: #eddecd;
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 8px 4px 17px -7px #ffc76e;
+    border-radius: 10px;
+    margin-top: 1em; }
+    .ziko__grid--maison img {
+      width: 100%; }
+    .ziko__grid--maison ul li {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      padding: 1em 0;
+      color: white; }
+    .ziko__grid--maison button {
+      background-color: #faad07;
+      border: none;
+      width: 100%;
+      padding: 1em 0em;
+      font-weight: bold;
+      border-radius: 10px; }
