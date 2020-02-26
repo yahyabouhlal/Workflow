@@ -11,8 +11,12 @@
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+        box-shadow: 8px 4px 17px -7px rgba(255,199,110,1);
+        border-radius: 10px;
+        margin-top: 1em;
         img {
             width: 100%;
+            
           }
           ul {
             li {
@@ -27,8 +31,9 @@
               background-color: #faad07;
               border: none;
               width: 100%;
-              padding: 0.5em 0;
+              padding: 1em 0em;
               font-weight: bold;
+              border-radius: 10px;
           }
     }
     
