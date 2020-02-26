@@ -1,0 +1,21 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1150px auto; }
+  .grid__hero img {
+    width: 1150px;
+    height: 500px; }
+  .grid__agents {
+    background-color: #ecdcca; }
+    .grid__agents h1 {
+      text-align: center;
+      color: #faad07;
+      margin-top: .6em;
+      font-size: 3em; }
+  .grid__agents--realtor {
+    display: grid;
+    grid-row-gap: 2em;
+    justify-items: center;
+    margin-top: 1.5em; }
+    .grid__agents--realtor img {
+      width: 150px;
+      height: 100px; }

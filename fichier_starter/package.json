@@ -44,5 +44,8 @@
     "defaults",
     "last 3 versions"
   ],
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "package": "^1.0.1"
+  }
 }
