@@ -1,15 +1,32 @@
-.ziko{
+.ziko {
+    
+  &__grid {
     
     
-    &__grid{
+    text-align: center;
+    &--maison{
+        grid-template-columns: repeat(3, 33.33%);
+        grid-template-rows: repeat(3, 33.33%);
         display: grid;
-        grid-template-columns: repeat(3 , 33.33%);
-        text-align: center;
-        img{
-            width: 60%;
-        }
-        
-
-       
+        img {
+            width: 70%;
+          }
+          ul {
+            li {
+              display: grid;
+              grid-template-columns: repeat(2, 50%);
+              padding: 1em 0;
+              color: white;
+            }
+          }
+      
+          button{
+              background-color: #faad07;
+              border: none;
+              width: 70%;
+              padding: 0.5em 0;
+          }
     }
+    
+  }
 }
