@@ -1,3 +1,47 @@
+@import "https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i";
+#ouma h1 {
+  font-size: 4rem;
+  font-family: 'Nunito';
+  color: #faad07; }
+
+#ouma .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-gap: 3em 1em; }
+
+#ouma .card {
+  display: flex;
+  place-items: center; }
+  #ouma .card__icon {
+    font-size: 3rem;
+    padding: 1em; }
+  #ouma .card__content--title {
+    font-weight: bold;
+    padding: .3em; }
+  #ouma .card__content--parg {
+    padding: .3em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60%; }
+
+#stors .stor {
+  display: grid;
+  grid-template-columns: repeat(2, 50%); }
+  #stors .stor__img img {
+    padding: .5em;
+    width: 15rem; }
+  #stors .stor__img--img2 {
+    margin-top: -5.9em;
+    margin-left: 8em; }
+  #stors .stor__parg--title {
+    text-align: center; }
+
+.ziko h1 {
+  font-size: 4rem;
+  font-family: 'Nunito';
+  color: #faad07; }
+
 .ziko__grid {
   display: grid;
   grid-template-columns: repeat(3, 33.33%);
