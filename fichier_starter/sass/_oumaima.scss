@@ -5,6 +5,20 @@
     text-align: center;
     width: 60%;
 }
+@mixin btn {
+    background:linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
+    border: none;
+    width: 40%;
+    padding: 1em 0em;
+    font-weight: bold;
+    border-radius: 10px;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    margin-top: 2rem;
+    color: white;
+    cursor: pointer;
+}
 
 @import "https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i";
 
@@ -64,23 +78,13 @@
     &__text{
         text-align: center;
         @include parg();
-        padding:5rem;
+        padding:3rem;
         margin: 2rem;
         line-height: 2;
         font-size: large;
     }
     &__btn{
-        background:linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
-        border: none;
-        width: 40%;
-        padding: 1em 0em;
-        font-weight: bold;
-        border-radius: 10px;
-        left: 50%;
-        position: relative;
-        transform: translateX(-50%);
-        margin-top: 2rem;
+        @include btn();
     }
-
 }
        
