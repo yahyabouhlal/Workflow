@@ -61,6 +61,14 @@
             margin-top: -7em;
         }
     } 
+    &__text{
+        text-align: center;
+        @include parg();
+        padding:5rem;
+        margin: 2rem;
+        line-height: 2;
+        font-size: large;
+    }
     
 }
        
