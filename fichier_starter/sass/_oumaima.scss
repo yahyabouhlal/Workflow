@@ -1,0 +1,70 @@
+@mixin parg {
+    padding: .3em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+}
+
+@import "https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i";
+
+
+#ouma{
+    
+    h1{
+        font-size: 4rem;
+        font-family: 'Nunito';
+        color: #faad07;
+    }
+   
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 33.33%);
+        grid-gap: 3em 1em;
+    }
+    
+    .card{
+        display: flex;
+        place-items: center;
+        &__icon{
+            font-size: 3rem;
+            padding:1em;
+        }
+        &__content{
+            &--title{
+                font-weight: bold;
+                padding: .3em;
+            }
+            &--parg{
+               @include parg();
+
+            }
+        }
+    }
+
+}
+#stors{
+    .stor{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        &__img{
+            img{
+            padding: .5em;
+            width: 15rem;
+           
+            }
+        &--img2{
+            margin-top:-5.9em ;
+            margin-left: 8em;
+           
+        }
+        }
+        &__parg{
+            &--title{
+                text-align: center;
+            }
+        }
+    }
+}
+       
