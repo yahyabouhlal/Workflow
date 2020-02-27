@@ -69,6 +69,18 @@
         line-height: 2;
         font-size: large;
     }
-    
+    &__btn{
+        background:linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
+        border: none;
+        width: 40%;
+        padding: 1em 0em;
+        font-weight: bold;
+        border-radius: 10px;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+        margin-top: 2rem;
+    }
+
 }
        
