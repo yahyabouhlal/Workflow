@@ -25,3 +25,42 @@
       padding: 1em 0em;
       font-weight: bold;
       border-radius: 10px; }
+
+footer {
+  background-color: #eddecd; }
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 1.3em; }
+    footer ul li a {
+      text-decoration: none; }
+  footer .footer {
+    display: flex;
+    justify-content: center; }
+    footer .footer img {
+      position: absolute;
+      top: 20%;
+      width: 20%; }
+  footer .copy-right {
+    display: grid;
+    grid-template-columns: repeat(2, 50%); }
+    footer .copy-right .copy {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      transform: translateX(-50%); }
+    footer .copy-right .message {
+      transform: translateY(-25%); }
+      footer .copy-right .message input[type="text"] {
+        border: none;
+        padding: .5em 2em;
+        background-color: none;
+        border-radius: 5px;
+        margin-left: .6em; }
+      footer .copy-right .message input[type="button"] {
+        border: none;
+        padding: .3em 1em;
+        background-color: #faad07; }

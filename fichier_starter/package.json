@@ -1,5 +1,5 @@
 {
-  "name": "booking",
+  "name": "dz",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,7 @@
     "compress:css": "node-sass dist/css/style.prefix.css dist/css/style.css --output-style compressed",
     "building-prod": "npm-run-all compress:css",
     "fin-production": "===========================================",
+
     "Mode-dev": "==============Branch dev==============",
     "watch-dev": "node-sass sass/main.scss dist/css/style.prefix.css -w",
     "start:dev": "concurrently  \"npm run server:prod\" \"npm run watch-dev\"",
@@ -18,6 +19,7 @@
     "prefix:css": "postcss dist/css/style.concat.css --use autoprefixer -o dist/css/style.prefix.css",
     "building-dev": "npm-run-all compiler:sass concat:css prefix:css",
     "fin-dev": "==============Branch dev==============",
+    
     "deploying": "==============Branch Prod==============",
     "watch-deploy": "node-sass sass/main.scss dist/css/style.css -w",
     "start:deploy": "concurrently  \"npm run server:prod\" \"npm run watch-deploy\"",
@@ -44,5 +46,8 @@
     "defaults",
     "last 3 versions"
   ],
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "package": "^1.0.1"
+  }
 }
