@@ -44,27 +44,23 @@
     }
 
 }
-#stors{
-    .stor{
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        &__img{
-            img{
-            padding: .5em;
-            width: 15rem;
-           
-            }
+.storys{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    &__pict{
+        img{
+        width: 50%;
+        padding-left:2em
+        }
+
+        &--img1{
+        }
+
         &--img2{
-            margin-top:-5.9em ;
-            margin-left: 8em;
-           
+            margin-left: 14em;
+            margin-top: -7em;
         }
-        }
-        &__parg{
-            &--title{
-                text-align: center;
-            }
-        }
-    }
+    } 
+    
 }
        
