@@ -5,6 +5,20 @@
     text-align: center;
     width: 60%;
 }
+@mixin btn {
+    background:linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
+    border: none;
+    width: 40%;
+    padding: 1em 0em;
+    font-weight: bold;
+    border-radius: 10px;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    margin-top: 2rem;
+    color: white;
+    cursor: pointer;
+}
 
 @import "https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i";
 
@@ -44,27 +58,33 @@
     }
 
 }
-#stors{
-    .stor{
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        &__img{
-            img{
-            padding: .5em;
-            width: 15rem;
-           
-            }
+.storys{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    &__pict{
+        img{
+        width: 50%;
+        padding-left:2em
+        }
+
+        &--img1{
+        }
+
         &--img2{
-            margin-top:-5.9em ;
-            margin-left: 8em;
-           
+            margin-left: 14em;
+            margin-top: -7em;
         }
-        }
-        &__parg{
-            &--title{
-                text-align: center;
-            }
-        }
+    } 
+    &__text{
+        text-align: center;
+        @include parg();
+        padding:3rem;
+        margin: 2rem;
+        line-height: 2;
+        font-size: large;
+    }
+    &__btn{
+        @include btn();
     }
 }
        

@@ -1,5 +1,9 @@
 .ziko {
-    
+  h1{
+    font-size: 4rem;
+    font-family: 'Nunito';
+    color: #faad07;
+}
     &__grid {
       display: grid;
       grid-template-columns: repeat(3, 33.33%);
