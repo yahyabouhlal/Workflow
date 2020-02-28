@@ -148,6 +148,74 @@ body {
         background-color: #47c3cd;
         border-radius: 20px; }
 
+.logo {
+  display: grid;
+  justify-items: center;
+  grid-area: 1 / 2 / 2 / 4; }
+  .logo img {
+    width: 50%;
+    color: #d1b58a; }
+
+.grid {
+  background: url(/fichier_starter/dist/img/back.jpg);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 15px; }
+  .grid__title {
+    grid-area: 2 / 1 / 3 / 5;
+    margin-left: 10em; }
+    .grid__title h1 {
+      font-size: 3em;
+      color: #92704d; }
+    .grid__title p {
+      font-size: 2em;
+      color: #896749; }
+  .grid__title--btn {
+    background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
+    border: none;
+    width: 20%;
+    padding: 1em 0em;
+    font-weight: bold;
+    border-radius: 10px;
+    left: 10%;
+    position: relative;
+    transform: translateX(-50%);
+    margin-top: 2rem;
+    color: white;
+    cursor: pointer; }
+  .grid__title--logos {
+    grid-area: 3 / 1 / 4 / 5;
+    display: inline; }
+    .grid__title--logos h4 {
+      text-align: center;
+      font-size: 2em;
+      color: #ffffff; }
+    .grid__title--logos img {
+      width: 13.5em;
+      height: 3em;
+      padding: 2em; }
+  .grid__agents {
+    grid-area: 1 / 5 / 4 / 6;
+    background-color: #eddecd; }
+    .grid__agents h2 {
+      text-align: center;
+      margin-bottom: .5em;
+      color: #faad07; }
+    .grid__agents h3 {
+      text-align: center;
+      color: #faad07; }
+    .grid__agents p {
+      color: #000000; }
+  .grid__agents--realtors {
+    display: grid;
+    justify-content: center;
+    grid-row-gap: 1em; }
+    .grid__agents--realtors img {
+      width: 120px;
+      height: 100px; }
+
 #ouma h1 {
   font-size: 4rem;
   font-family: 'Nunito';
@@ -173,6 +241,18 @@ body {
     flex-direction: column;
     text-align: center;
     width: 60%; }
+
+#stors .stor {
+  display: grid;
+  grid-template-columns: repeat(2, 50%); }
+  #stors .stor__img img {
+    padding: .5em;
+    width: 15rem; }
+  #stors .stor__img--img2 {
+    margin-top: -5.9em;
+    margin-left: 8em; }
+  #stors .stor__parg--title {
+    text-align: center; }
 
 @media only screen and (max-width: 600px) {
   #ouma .cards {
@@ -295,3 +375,49 @@ footer {
         border: none;
         padding: 0.3em 1em;
         background-color: #faad07; }
+
+.gallerie {
+  width: 95%;
+  display: grid;
+  position: absolute;
+  top: 2000px;
+  left: 5%;
+  grid-auto-flow: dense;
+  grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh
+ "1fr 1fr 1fr 1fr 1fr" 33.33vh
+ "1fr 1fr 1fr 1fr 1fr" 33.33vh; }
+
+h1 {
+  position: absolute;
+  top: 550px;
+  left: 7%;
+  color: #faad07; }
+
+.gallerie .box {
+  position: relative;
+  background-color: gray; }
+
+.gallerie .box.a {
+  grid-row: span 2; }
+
+.gallerie .box.b,
+.gallerie .box.f,
+.gallerie .box.h,
+.gallerie .box.j {
+  grid-column: span 2; }
+
+.gallerie .box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+@media (max-width: 800px) {
+  .gallerie {
+    grid-template: "1fr 1fr 1fr" 250px
+ "1fr 1fr 1fr" 250px
+ "1fr 1fr 1fr" 250px
+ "1fr 1fr 1fr" 250px
+ "1fr 1fr 1fr" 250px; } }
