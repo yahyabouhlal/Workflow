@@ -5,6 +5,7 @@
     text-align: center;
     width: 60%;
 }
+
 @mixin btn {
     background:linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
     border: none;
@@ -19,6 +20,12 @@
     color: white;
     cursor: pointer;
 }
+
+@mixin responsive-column-om {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    text-align: center;
+  }
 
 @import "https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i";
 
@@ -57,7 +64,21 @@
         }
     }
 
+
 }
+
+//Media card
+
+
+@media only screen and (max-width: 600px) {
+    
+    #ouma{
+         .cards {
+            @include responsive-column-om();
+        }
+    }
+  }
+
 .storys{
     display: grid;
     grid-template-columns: repeat(2,50%);
@@ -88,3 +109,4 @@
     }
 }
        
+
