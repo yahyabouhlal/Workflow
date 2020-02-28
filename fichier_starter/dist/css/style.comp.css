@@ -184,6 +184,10 @@ body {
   .storys__pict img {
     width: 50%;
     padding-left: 2em; }
+  .storys__pict--img1 {
+    transition: all 20ms ease-in; }
+    .storys__pict--img1:hover {
+      transform: scale(1); }
   .storys__pict--img2 {
     margin-left: 14em;
     margin-top: -7em; }
