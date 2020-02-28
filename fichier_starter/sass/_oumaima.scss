@@ -89,6 +89,12 @@
         }
 
         &--img1{
+            transition:all 20ms ease-in;
+            &:hover{
+                
+                
+                transform: scale(1);
+            }
         }
 
         &--img2{
