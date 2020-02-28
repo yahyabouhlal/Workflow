@@ -18,19 +18,19 @@ body {
 
 }
 
-#mmeennuu {
-	display:none;
-}
+
+
 
 #mmeennuu:checked ~ .menu {
     
-    margin:0%;
+    margin:-25% 0% 0% 0%;
 	width:2000%;
 	border-radius:0%;
 	background:linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
 	border: none;
     height:25%;
-    
+    position: absolute;
+    z-index: 2;
 
 	&>ul {
 		display:block;
@@ -40,8 +40,10 @@ body {
 	}
 	&>.barry {
 		display:none;
-	}
+    }
+   
 }
+
 
 .menu {
 	display:block;
