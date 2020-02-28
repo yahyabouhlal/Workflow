@@ -78,8 +78,33 @@ $color-fons: #ffffff;
         }
     }
 
-
 }
+#stors{
+    .stor{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        &__img{
+            img{
+            padding: .5em;
+            width: 15rem;
+           
+            }
+        &--img2{
+            margin-top:-5.9em ;
+            margin-left: 8em;
+           
+        }
+        }
+        &__parg{
+            &--title{
+                text-align: center;
+            }
+        }
+    }
+}
+       
+
+
 
 //Media card
 
@@ -104,6 +129,12 @@ $color-fons: #ffffff;
 
         &--img1{
             box-shadow: 8px 4px 17px -7px rgba(255, 199, 110, 1);
+            transition:all 20ms ease-in;
+            &:hover{
+                
+                
+                transform: scale(1);
+            }
         }
 
         &--img2{
