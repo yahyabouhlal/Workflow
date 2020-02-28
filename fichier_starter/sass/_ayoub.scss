@@ -30,15 +30,11 @@ $color-fons: #ffffff;
     img{
         width: 50%;
         color: $color-logo;
-
     }
 }
 
 .grid {
-    
     background: url(/fichier_starter/dist/img/back.jpg);
-   
-    
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -105,6 +101,7 @@ $color-fons: #ffffff;
         img{
         width: 120px;
         height: 100px;
+
         }
     }
 
