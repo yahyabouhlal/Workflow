@@ -66,6 +66,86 @@ body {
         background-color: #47c3cd;
         border-radius: 20px; }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #222; }
+
+* {
+  font-family: Helvetica,sans-serif;
+  color: #b4a557; }
+
+#mmeennuu {
+  display: none; }
+
+#mmeennuu:checked ~ .menu {
+  margin: 0%;
+  width: 2000%;
+  border-radius: 0%;
+  background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
+  height: 25%; }
+  #mmeennuu:checked ~ .menu > ul {
+    display: block;
+    opacity: 1; }
+  #mmeennuu:checked ~ .menu > .barry {
+    display: none; }
+
+.menu {
+  display: block;
+  margin: 20px 15px auto;
+  width: 60px;
+  height: 60px;
+  background-color: #0f0f0f;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out; }
+  .menu div.barry {
+    width: 40px;
+    margin: 15px auto; }
+    .menu div.barry .bar {
+      display: block;
+      width: 100%;
+      height: 5px;
+      margin-top: 3px;
+      border-radius: 2px;
+      background-color: #fff; }
+  .menu ul {
+    margin-top: 7%;
+    opacity: 0;
+    display: none;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 0; }
+    .menu ul li a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 1%;
+      color: #0f0f0f;
+      font-size: 200%;
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      border: 3px solid transparent;
+      border-radius: 5px; }
+      .menu ul li a:hover {
+        border-color: #0f0f0f;
+        background-color: #47c3cd;
+        border-radius: 20px; }
+
 .logo {
   display: grid;
   justify-items: center;
@@ -75,7 +155,7 @@ body {
     color: #d1b58a; }
 
 .grid {
-  background: url(/fichier_starter/dist/img/back.jpg);
+  background: url(/fichier_starter/dist/img/gus-ruballo-h5QNclJUiA8-unsplash.jpg);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -185,6 +265,11 @@ body {
     width: 50%;
     padding-left: 2em; }
   .storys__pict--img1 {
+    box-shadow: 8px 4px 17px -7px #ffc76e; }
+  .storys__pict--img2 {
+    margin-left: 14em;
+    margin-top: -7em;
+    box-shadow: 8px 4px 17px -7px #ffc76e; }
     transition: all 20ms ease-in; }
     .storys__pict--img1:hover {
       transform: scale(1); }
@@ -298,7 +383,9 @@ footer {
   width: 95%;
   display: grid;
   grid-auto-flow: dense;
-  grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh; }
+  grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh
+ "1fr 1fr 1fr 1fr 1fr" 33.33vh
+ "1fr 1fr 1fr 1fr 1fr" 33.33vh; }
 
 h1 {
   font-size: 4rem;
@@ -328,4 +415,8 @@ h1 {
 
 @media (max-width: 800px) {
   .gallerie {
-    grid-template: "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px; } }
+    grid-template: "1fr 1fr 1fr" 250px
+ "1fr 1fr 1fr" 250px
+ "1fr 1fr 1fr" 250px
+ "1fr 1fr 1fr" 250px
+ "1fr 1fr 1fr" 250px; } }
