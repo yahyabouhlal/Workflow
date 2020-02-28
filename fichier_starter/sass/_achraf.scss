@@ -9,7 +9,7 @@ $bb:#47c3cd;
 body {
 	margin:0;
 	padding:0;
-	background-color:#222;
+	// background-color:#222;
 }
 * {
 	font-family:Helvetica,sans-serif;
@@ -27,120 +27,6 @@ body {
 	border-radius:0%;
 	background:linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
 	border:3px solid $red;
-	height:25%;
-
-	&>ul {
-		display:block;
-        opacity:1;
-        
-        
-	}
-	&>.barry {
-		display:none;
-	}
-}
-
-.menu {
-	display:block;
-	margin:20px 15px auto;
-	width:60px;
-	height:60px;
-	background-color:$red;
-	border:1px solid transparent;
-	border-radius:50%;
-	overflow:hidden;
-	cursor:pointer;
-	@include transition(all 0.5s ease-in-out);
-
-	div.barry {
-
-		width:40px;
-		margin:15px auto;
-
-
-		.bar {
-			display:block;
-			width:100%;
-			height:5px;
-			margin-top:3px;
-			border-radius:2px;
-			background-color:#fff;
-		}
-	}
-
-	ul {
-        margin-top: 7%;
-		opacity:0;
-		display:none;
-		@include transition(all 0.5s ease-in-out);
-		list-style-type:none;
-		padding:0;
-		text-align:center;
-		margin-bottom: 0;
-
-		li {
-			a {
-				text-decoration:none;
-				display:inline-block;
-				padding:1%;
-				color:$red;
-				font-size:200%;
-				@include transition(all 0.3s ease-in-out);
-				border:3px solid transparent;
-                border-radius:5px;
-            
-                
-
-				&:hover {
-                    border-color:$red;
-                    background-color: $bb;
-                    border-radius: 20px;
-				}
-				
-				&:target {
-					// border-bottom-color:$red;
-				}
-			}
-		}
-	}
-}
-$lred:#b4a557;
-$red:rgb(15, 15, 15);
-$bb:#47c3cd;
-
-@mixin transition($in) {
-    transition:$in;
-	-webkit-transition:$in;
-	-moz-transition:$in;
-	-o-transition:$in;
-	-ms-transition:$in;
-	
-	
-}
-
-body {
-	margin:0;
-	padding:0;
-	background-color:#222;
-}
-* {
-	font-family:Helvetica,sans-serif;
-    color:$lred;
-    
-    
-}
-
-#mmeennuu {
-	display:none;
-}
-
-#mmeennuu:checked ~ .menu {
-    
-    margin:0%;
-	width:2000%;
-	border-radius:0%;
-	background:linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
-	
 	height:25%;
 
 	&>ul {
