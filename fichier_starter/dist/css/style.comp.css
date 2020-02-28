@@ -294,14 +294,16 @@ footer {
         padding: 0.3em 1em;
         background-color: #faad07; }
 
-.yaya {
+.gallerie {
   width: 95%;
   display: grid;
-  position: absolute;
-  top: 2000px;
-  left: 5%;
   grid-auto-flow: dense;
   grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh; }
+
+h1 {
+  font-size: 4rem;
+  font-family: "Nunito";
+  color: #faad07; }
 
 .gallerie .box {
   position: relative;
