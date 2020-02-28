@@ -1,12 +1,10 @@
 @import "https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i";
 body {
   margin: 0;
-  padding: 0;
-  background-color: #222; }
+  padding: 0; }
 
 * {
-  font-family: Helvetica,sans-serif;
-  color: #b4a557; }
+  font-family: Helvetica,sans-serif; }
 
 #mmeennuu {
   display: none; }
@@ -242,6 +240,18 @@ body {
     text-align: center;
     width: 60%; }
 
+#stors .stor {
+  display: grid;
+  grid-template-columns: repeat(2, 50%); }
+  #stors .stor__img img {
+    padding: .5em;
+    width: 15rem; }
+  #stors .stor__img--img2 {
+    margin-top: -5.9em;
+    margin-left: 8em; }
+  #stors .stor__parg--title {
+    text-align: center; }
+
 @media only screen and (max-width: 600px) {
   #ouma .cards {
     display: grid;
@@ -254,6 +264,15 @@ body {
   .storys__pict img {
     width: 50%;
     padding-left: 2em; }
+  .storys__pict--img1 {
+    box-shadow: 8px 4px 17px -7px #ffc76e; }
+  .storys__pict--img2 {
+    margin-left: 14em;
+    margin-top: -7em;
+    box-shadow: 8px 4px 17px -7px #ffc76e; }
+    transition: all 20ms ease-in; }
+    .storys__pict--img1:hover {
+      transform: scale(1); }
   .storys__pict--img2 {
     margin-left: 14em;
     margin-top: -7em; }
@@ -359,3 +378,43 @@ footer {
         border: none;
         padding: 0.3em 1em;
         background-color: #faad07; }
+
+.yaya {
+  width: 95%;
+  display: grid;
+  position: absolute;
+  top: 2000px;
+  left: 5%;
+  grid-auto-flow: dense;
+  grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh
+ "1fr 1fr 1fr 1fr 1fr" 33.33vh
+ "1fr 1fr 1fr 1fr 1fr" 33.33vh; }
+
+.gallerie .box {
+  position: relative;
+  background-color: gray; }
+
+.gallerie .box.a {
+  grid-row: span 2; }
+
+.gallerie .box.b,
+.gallerie .box.f,
+.gallerie .box.h,
+.gallerie .box.j {
+  grid-column: span 2; }
+
+.gallerie .box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+@media (max-width: 800px) {
+  .gallerie {
+    grid-template: "1fr 1fr 1fr" 250px
+ "1fr 1fr 1fr" 250px
+ "1fr 1fr 1fr" 250px
+ "1fr 1fr 1fr" 250px
+ "1fr 1fr 1fr" 250px; } }

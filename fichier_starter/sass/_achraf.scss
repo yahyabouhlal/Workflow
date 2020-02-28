@@ -1,5 +1,5 @@
 $lred:#b4a557;
-$red:rgb(15, 15, 15);
+$nn:rgb(15, 15, 15);
 $bb:#47c3cd;
 
 @mixin transition($in) {
@@ -9,7 +9,7 @@ $bb:#47c3cd;
 body {
 	margin:0;
 	padding:0;
-	background-color:#222;
+	
 }
 * {
 	font-family:Helvetica,sans-serif;
@@ -121,12 +121,10 @@ $bb:#47c3cd;
 body {
 	margin:0;
 	padding:0;
-	background-color:#222;
+	
 }
 * {
 	font-family:Helvetica,sans-serif;
-    color:$lred;
-    
     
 }
 
@@ -140,7 +138,7 @@ body {
 	width:2000%;
 	border-radius:0%;
 	background:linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
-	
+	border:3px solid $nn;
 	height:25%;
 
 	&>ul {
@@ -159,7 +157,7 @@ body {
 	margin:20px 15px auto;
 	width:60px;
 	height:60px;
-	background-color:$red;
+	background-color:$nn;
 	border:1px solid transparent;
 	border-radius:50%;
 	overflow:hidden;
@@ -197,7 +195,7 @@ body {
 				text-decoration:none;
 				display:inline-block;
 				padding:1%;
-				color:$red;
+				color:$nn;
 				font-size:200%;
 				@include transition(all 0.3s ease-in-out);
 				border:3px solid transparent;
@@ -206,7 +204,7 @@ body {
                 
 
 				&:hover {
-                    border-color:$red;
+                    border-color:$nn;
                     background-color: $bb;
                     border-radius: 20px;
 				}
