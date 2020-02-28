@@ -4,8 +4,7 @@ body {
   padding: 0; }
 
 * {
-  font-family: Helvetica,sans-serif;
-  color: #b4a557; }
+  font-family: Helvetica,sans-serif; }
 
 #mmeennuu {
   display: none; }
@@ -76,7 +75,7 @@ body {
     color: #d1b58a; }
 
 .grid {
-  background: url(/fichier_starter/dist/img/back.jpg);
+  background: url(/fichier_starter/dist/img/gus-ruballo-h5QNclJUiA8-unsplash.jpg);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -186,6 +185,11 @@ body {
     width: 50%;
     padding-left: 2em; }
   .storys__pict--img1 {
+    box-shadow: 8px 4px 17px -7px #ffc76e; }
+  .storys__pict--img2 {
+    margin-left: 14em;
+    margin-top: -7em;
+    box-shadow: 8px 4px 17px -7px #ffc76e; }
     transition: all 20ms ease-in; }
     .storys__pict--img1:hover {
       transform: scale(1); }
@@ -298,16 +302,12 @@ footer {
 .gallerie {
   width: 95%;
   display: grid;
-  position: absolute;
-  top: 2000px;
-  left: 5%;
   grid-auto-flow: dense;
   grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh; }
 
 h1 {
-  position: absolute;
-  top: 550px;
-  left: 7%;
+  font-size: 4rem;
+  font-family: "Nunito";
   color: #faad07; }
 
 .gallerie .box {
