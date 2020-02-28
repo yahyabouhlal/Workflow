@@ -1,9 +1,9 @@
 .gallerie{
     width: 95%;
     display: grid;
-    position: absolute;
-    top: 2000px;
-    left: 5%;
+    // position: absolute;
+    // top: 2000px;
+    // left: 5%;
     grid-auto-flow: dense;
     grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh
                    "1fr 1fr 1fr 1fr 1fr" 33.33vh
@@ -11,10 +11,11 @@
     //    grid-gap: 5px;            
     
     }
+
     
     h1{
-        top: 550px;
-        left: 7%;
+        font-size: 4rem;
+        font-family: "Nunito";
         color: #faad07;
     }
     .gallerie .box{

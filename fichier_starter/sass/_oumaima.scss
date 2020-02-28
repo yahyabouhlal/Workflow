@@ -5,6 +5,21 @@ $color-title: #92704d;
 $color-logo: #d1b58a;
 $color-lorem: #896749;
 $color-fons: #ffffff;
+
+@mixin hov {
+    :hover{
+        background-color:black ;
+    }
+}
+
+@mixin parg {
+    padding: .3em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+}
+
 @mixin btn {
     background:linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
     border: none;
@@ -30,6 +45,12 @@ $color-fons: #ffffff;
     img{
         width: 50%;
         color: $color-logo;
+    h1{
+        font-size: 4rem;
+        font-family: 'Nunito';
+        color: $color-title;
+    }
+   
 
     }
 }
@@ -95,6 +116,20 @@ $color-fons: #ffffff;
         p{
             color:$color-nomagents ;
             
+        &--img1{
+            box-shadow: 8px 4px 17px -7px rgba(255, 199, 110, 1);
+            transition:all 20ms ease-in;
+            &:hover{
+                
+                
+                transform: scale(1);
+            }
+        }
+
+        &--img2{
+            margin-left: 14em;
+            margin-top: -7em;
+            box-shadow: 8px 4px 17px -7px rgba(255, 199, 110, 1);
         }
     }
     &__agents--realtors{
@@ -106,6 +141,9 @@ $color-fons: #ffffff;
         width: 120px;
         height: 100px;
         }
+    &__btn{
+        @include btn();
+        @include hov();
     }
 
 
