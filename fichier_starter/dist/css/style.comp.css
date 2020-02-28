@@ -69,3 +69,43 @@
       padding: 1em 0em;
       font-weight: bold;
       border-radius: 10px; }
+
+.gallerie {
+  width: 95%;
+  display: grid;
+  position: absolute;
+  top: 2000px;
+  left: 5%;
+  grid-auto-flow: dense;
+  grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh; }
+
+h1 {
+  position: absolute;
+  top: 550px;
+  left: 7%;
+  color: #faad07; }
+
+.gallerie .box {
+  position: relative;
+  background-color: gray; }
+
+.gallerie .box.a {
+  grid-row: span 2; }
+
+.gallerie .box.b,
+.gallerie .box.f,
+.gallerie .box.h,
+.gallerie .box.j {
+  grid-column: span 2; }
+
+.gallerie .box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+@media (max-width: 800px) {
+  .gallerie {
+    grid-template: "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px; } }
