@@ -64,8 +64,33 @@
         }
     }
 
-
 }
+#stors{
+    .stor{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        &__img{
+            img{
+            padding: .5em;
+            width: 15rem;
+           
+            }
+        &--img2{
+            margin-top:-5.9em ;
+            margin-left: 8em;
+           
+        }
+        }
+        &__parg{
+            &--title{
+                text-align: center;
+            }
+        }
+    }
+}
+       
+
+
 
 //Media card
 
