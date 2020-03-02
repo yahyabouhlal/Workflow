@@ -16,57 +16,66 @@ body {
   border-radius: 0%;
   background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
   border: 3px solid #b4a557;
-  border: none;
   height: 25%; }
   #mmeennuu:checked ~ .menu > ul {
     display: block;
-    opacity: 1; }
-  #mmeennuu:checked ~ .menu > .barry {
-    display: none; }
-
-.menu {
-  display: block;
-  margin: 2px 6px auto;
-  width: 60px;
-  height: 60px;
-  background-color: #b4a557;
-  border: 1px solid transparent;
-  border-radius: 50%;
-  overflow: hidden;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out; }
-  .menu div.barry {
-    width: 40px;
-    margin: 15px auto; }
-    .menu div.barry .bar {
+    opacity: 1;
+    border: none;
+    height: 25%; }
+    #mmeennuu:checked ~ .menu > ul > ul {
       display: block;
-      width: 100%;
-      height: 5px;
-      margin-top: 3px;
-      border-radius: 2px;
-      background-color: #fff; }
-  .menu ul {
-    margin-top: 7%;
-    opacity: 0;
-    display: none;
-    transition: all 0.5s ease-in-out;
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    margin-bottom: 0; }
-    .menu ul li a {
-      text-decoration: none;
-      display: inline-block;
-      padding: 1%;
-      color: #b4a557;
-      font-size: 200%;
-      transition: all 0.3s ease-in-out;
-      border: 3px solid transparent;
-      border-radius: 5px; }
-      .menu ul li a:hover {
-        border-color: #b4a557;
-        background-color: #47c3cd;
-        border-radius: 20px; }
+      opacity: 1; }
+    #mmeennuu:checked ~ .menu > ul > .barry {
+      display: none; }
+  #mmeennuu:checked ~ .menu .menu {
+    display: block;
+    margin: 20px 15px auto;
+    width: 60px;
+    height: 60px;
+    background-color: #b4a557;
+    margin: 2px 6px auto;
+    width: 60px;
+    height: 60px;
+    background-color: #b4a557;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out; }
+    #mmeennuu:checked ~ .menu .menu div.barry {
+      width: 40px;
+      margin: 15px auto; }
+      #mmeennuu:checked ~ .menu .menu div.barry .bar {
+        display: block;
+        width: 100%;
+        height: 5px;
+        margin-top: 3px;
+        border-radius: 2px;
+        background-color: #fff; }
+    #mmeennuu:checked ~ .menu .menu ul {
+      margin-top: 7%;
+      opacity: 0;
+      display: none;
+      transition: all 0.5s ease-in-out;
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+      margin-bottom: 0; }
+      #mmeennuu:checked ~ .menu .menu ul li a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 1%;
+        color: #b4a557;
+        color: #0f0f0f;
+        font-size: 200%;
+        transition: all 0.3s ease-in-out;
+        border: 3px solid transparent;
+        border-radius: 5px; }
+        #mmeennuu:checked ~ .menu .menu ul li a:hover {
+          border-color: #b4a557;
+          border-color: #0f0f0f;
+          background-color: #47c3cd;
+          border-radius: 20px; }
 
 .logo {
   display: grid;
@@ -77,7 +86,7 @@ body {
     color: #d1b58a; }
 
 .grid {
-  background: url(/fichier_starter/dist/img/gus-ruballo-h5QNclJUiA8-unsplash.jpg);
+  background: url(/fichier_starter/dist/img/photo-1505410603994-c3ac6269711f.jpeg);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -305,9 +314,7 @@ footer {
   width: 95%;
   display: grid;
   grid-auto-flow: dense;
-  grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh
- "1fr 1fr 1fr 1fr 1fr" 33.33vh
- "1fr 1fr 1fr 1fr 1fr" 33.33vh; }
+  grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh; }
 
 h1 {
   font-size: 4rem;
@@ -337,8 +344,4 @@ h1 {
 
 @media (max-width: 800px) {
   .gallerie {
-    grid-template: "1fr 1fr 1fr" 250px
- "1fr 1fr 1fr" 250px
- "1fr 1fr 1fr" 250px
- "1fr 1fr 1fr" 250px
- "1fr 1fr 1fr" 250px; } }
+    grid-template: "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px; } }

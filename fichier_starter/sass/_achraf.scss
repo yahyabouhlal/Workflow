@@ -15,11 +15,6 @@ body {
 	font-family:Helvetica,sans-serif;
     color:$red;
 }
-{
-    color:$lred;
-   
-
-}
 
 #mmeennuu {
 	display:none;
@@ -62,7 +57,7 @@ body {
 	margin:2px 6px auto;
 	width:60px;
 	height:60px;
-	background-color:$lred;
+	background-color:$red;
 	border:1px solid transparent;
 	border-radius:50%;
 	overflow:hidden;
@@ -121,5 +116,7 @@ body {
 				}
 			}
 		}
+
 	}
+}
 }
