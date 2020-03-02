@@ -20,7 +20,7 @@ body {
     display: grid;
     text-align: center;
     opacity: 1;
-    margin: 10% 40% 10% 30%; }
+    margin: 10% 30% 20% 30%; }
   #mmeennuu:checked ~ .menu > .barry {
     display: none; }
 
@@ -113,7 +113,8 @@ body {
       padding: 2em; }
   .grid__agents {
     grid-area: 1 / 5 / 4 / 6;
-    background-color: #eddecd; }
+    background-color: #eddecd;
+    height: 500px; }
     .grid__agents h2 {
       text-align: center;
       margin-bottom: .5em;
