@@ -1,4 +1,4 @@
-$lred:#b4a557;
+$red:#b4a557;
 $nn:rgb(15, 15, 15);
 $bb:#47c3cd;
 
@@ -9,10 +9,13 @@ $bb:#47c3cd;
 body {
 	margin:0;
 	padding:0;
-	
+	// background-color:#222;
 }
 * {
 	font-family:Helvetica,sans-serif;
+    color:$red;
+}
+{
     color:$lred;
    
 
@@ -27,6 +30,13 @@ body {
 	width:2000%;
 	border-radius:0%;
 	background:linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
+	border:3px solid $red;
+	height:25%;
+
+	&>ul {
+		display:block;
+		opacity:1;
+		
 	border: none;
     height:25%;
     position: absolute;
@@ -47,6 +57,10 @@ body {
 
 .menu {
 	display:block;
+	margin:20px 15px auto;
+	width:60px;
+	height:60px;
+	background-color:$red;
 	margin:2px 6px auto;
 	width:60px;
 	height:60px;
@@ -88,6 +102,7 @@ body {
 				text-decoration:none;
 				display:inline-block;
 				padding:1%;
+				color:$red;
 				color:$nn;
 				font-size:200%;
 				@include transition(all 0.3s ease-in-out);
@@ -97,6 +112,7 @@ body {
                 
 
 				&:hover {
+                    border-color:$red;
                     border-color:$nn;
                     background-color: $bb;
                     border-radius: 20px;
