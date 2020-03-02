@@ -6,8 +6,10 @@ body {
   font-family: Helvetica,sans-serif;
   color: #555; }
 
+#mmeennuu {
+  display: none; }
+
 #mmeennuu:checked ~ .menu {
-  margin: -25% 0% 0% 0%;
   width: 2000%;
   border-radius: 5px;
   background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
@@ -18,7 +20,7 @@ body {
     display: grid;
     text-align: center;
     opacity: 1;
-    margin: 10% 40% 10% 30%; }
+    margin: 10% 30% 20% 30%; }
   #mmeennuu:checked ~ .menu > .barry {
     display: none; }
 
@@ -260,9 +262,7 @@ footer {
   width: 97%;
   display: grid;
   grid-auto-flow: dense;
-  grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh
- "1fr 1fr 1fr 1fr 1fr" 33.33vh
- "1fr 1fr 1fr 1fr 1fr" 33.33vh; }
+  grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh; }
 
 h1 {
   font-size: 4rem;
@@ -292,8 +292,4 @@ h1 {
 
 @media (max-width: 800px) {
   .gallerie {
-    grid-template: "1fr 1fr 1fr" 250px
- "1fr 1fr 1fr" 250px
- "1fr 1fr 1fr" 250px
- "1fr 1fr 1fr" 250px
- "1fr 1fr 1fr" 250px; } }
+    grid-template: "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px; } }
