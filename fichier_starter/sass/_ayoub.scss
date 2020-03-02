@@ -35,7 +35,7 @@ $color-fons: #ffffff;
 
 .grid {
     
-    background: url(/fichier_starter/dist/img/gus-ruballo-h5QNclJUiA8-unsplash.jpg);
+    background: url(/fichier_starter/dist/img/photo-1505410603994-c3ac6269711f.jpeg);
     
     
     
@@ -101,7 +101,7 @@ $color-fons: #ffffff;
     &__agents--realtors{
         display: grid;
         justify-content: center;
-        grid-row-gap: 1em;
+        grid-row-gap: em;
         
         img{
         width: 120px;

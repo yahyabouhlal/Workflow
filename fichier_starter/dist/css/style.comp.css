@@ -1,10 +1,10 @@
-@import "https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i";
 body {
   margin: 0;
   padding: 0; }
 
 * {
-  font-family: Helvetica,sans-serif; }
+  font-family: Helvetica,sans-serif;
+  color: #b4a557; }
 
 #mmeennuu {
   display: none; }
@@ -14,57 +14,67 @@ body {
   width: 2000%;
   border-radius: 0%;
   background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
-  border: 3px solid #0f0f0f;
+  border: 3px solid #b4a557;
   height: 25%; }
   #mmeennuu:checked ~ .menu > ul {
     display: block;
-    opacity: 1; }
-  #mmeennuu:checked ~ .menu > .barry {
-    display: none; }
-
-.menu {
-  display: block;
-  margin: 20px 15px auto;
-  width: 60px;
-  height: 60px;
-  background-color: #0f0f0f;
-  border: 1px solid transparent;
-  border-radius: 50%;
-  overflow: hidden;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out; }
-  .menu div.barry {
-    width: 40px;
-    margin: 15px auto; }
-    .menu div.barry .bar {
+    opacity: 1;
+    border: none;
+    height: 25%; }
+    #mmeennuu:checked ~ .menu > ul > ul {
       display: block;
-      width: 100%;
-      height: 5px;
-      margin-top: 3px;
-      border-radius: 2px;
-      background-color: #fff; }
-  .menu ul {
-    margin-top: 7%;
-    opacity: 0;
-    display: none;
-    transition: all 0.5s ease-in-out;
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    margin-bottom: 0; }
-    .menu ul li a {
-      text-decoration: none;
-      display: inline-block;
-      padding: 1%;
-      color: #0f0f0f;
-      font-size: 200%;
-      transition: all 0.3s ease-in-out;
-      border: 3px solid transparent;
-      border-radius: 5px; }
-      .menu ul li a:hover {
-        border-color: #0f0f0f;
-        background-color: #47c3cd;
-        border-radius: 20px; }
+      opacity: 1; }
+    #mmeennuu:checked ~ .menu > ul > .barry {
+      display: none; }
+  #mmeennuu:checked ~ .menu .menu {
+    display: block;
+    margin: 20px 15px auto;
+    width: 60px;
+    height: 60px;
+    background-color: #b4a557;
+    margin: 2px 6px auto;
+    width: 60px;
+    height: 60px;
+    background-color: #b4a557;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out; }
+    #mmeennuu:checked ~ .menu .menu div.barry {
+      width: 40px;
+      margin: 15px auto; }
+      #mmeennuu:checked ~ .menu .menu div.barry .bar {
+        display: block;
+        width: 100%;
+        height: 5px;
+        margin-top: 3px;
+        border-radius: 2px;
+        background-color: #fff; }
+    #mmeennuu:checked ~ .menu .menu ul {
+      margin-top: 7%;
+      opacity: 0;
+      display: none;
+      transition: all 0.5s ease-in-out;
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+      margin-bottom: 0; }
+      #mmeennuu:checked ~ .menu .menu ul li a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 1%;
+        color: #b4a557;
+        color: #0f0f0f;
+        font-size: 200%;
+        transition: all 0.3s ease-in-out;
+        border: 3px solid transparent;
+        border-radius: 5px; }
+        #mmeennuu:checked ~ .menu .menu ul li a:hover {
+          border-color: #b4a557;
+          border-color: #0f0f0f;
+          background-color: #47c3cd;
+          border-radius: 20px; }
 
 .logo {
   display: grid;
@@ -75,7 +85,7 @@ body {
     color: #d1b58a; }
 
 .grid {
-  background: url(/fichier_starter/dist/img/gus-ruballo-h5QNclJUiA8-unsplash.jpg);
+  background: url(/fichier_starter/dist/img/photo-1505410603994-c3ac6269711f.jpeg);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -129,71 +139,71 @@ body {
   .grid__agents--realtors {
     display: grid;
     justify-content: center;
-    grid-row-gap: 1em; }
+    grid-row-gap: em; }
     .grid__agents--realtors img {
       width: 120px;
       height: 100px; }
 
-#ouma h1 {
+.container #ouma h1 {
   font-size: 4rem;
   font-family: 'Nunito';
   color: #92704d; }
 
-#ouma .cards {
+.container #ouma .cards {
   display: grid;
   grid-template-columns: repeat(3, 33.33%);
   grid-gap: 3em 1em; }
 
-#ouma .card {
+.container #ouma .card {
   display: flex;
   place-items: center; }
-  #ouma .card__icon {
+  .container #ouma .card__icon {
     font-size: 3rem;
     padding: 1em; }
-  #ouma .card__content--title {
+  .container #ouma .card__content--title {
     font-weight: bold;
     padding: .3em; }
-  #ouma .card__content--parg {
+  .container #ouma .card__content--parg {
     padding: .3em;
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 60%; }
 
-#stors .stor {
+.container #stors .stor {
   display: grid;
   grid-template-columns: repeat(2, 50%); }
-  #stors .stor__img img {
+  .container #stors .stor__img img {
     padding: .5em;
     width: 15rem; }
-  #stors .stor__img--img2 {
+  .container #stors .stor__img--img2 {
     margin-top: -5.9em;
     margin-left: 8em; }
-  #stors .stor__parg--title {
+  .container #stors .stor__parg--title {
     text-align: center; }
 
 @media only screen and (max-width: 600px) {
-  #ouma .cards {
+  .container #ouma .cards {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     text-align: center; } }
 
-.storys {
+.container .storys {
   display: grid;
   grid-template-columns: repeat(2, 50%); }
-  .storys__pict img {
+  .container .storys__pict img {
     width: 50%;
     padding-left: 2em; }
-  .storys__pict--img1 {
+  .container .storys__pict--img1 {
     box-shadow: 8px 4px 17px -7px #ffc76e;
     transition: all 20ms ease-in; }
-    .storys__pict--img1:hover {
+    .container .storys__pict--img1:hover {
       transform: scale(1); }
-  .storys__pict--img2 {
+  .container .storys__pict--img2 {
     margin-left: 14em;
     margin-top: -7em;
     box-shadow: 8px 4px 17px -7px #ffc76e; }
-  .storys__text {
+  .container .storys__text {
     text-align: center;
     padding: .3em;
     display: flex;
@@ -204,21 +214,73 @@ body {
     margin: 2rem;
     line-height: 2;
     font-size: large; }
-  .storys__btn {
+  .container .storys__btn {
     background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
     border: none;
-    width: 40%;
+    width: 20%;
     padding: 1em 0em;
     font-weight: bold;
     border-radius: 10px;
-    left: 50%;
+    left: 10%;
     position: relative;
     transform: translateX(-50%);
     margin-top: 2rem;
     color: white;
     cursor: pointer; }
-    .storys__btn :hover {
-      background-color: black; }
+  .grid__title--logos {
+    grid-area: 3 / 1 / 4 / 5;
+    display: inline; }
+    .grid__title--logos h4 {
+      text-align: center;
+      font-size: 2em;
+      color: #ffffff; }
+    .grid__title--logos img {
+      width: 13.5em;
+      height: 3em;
+      padding: 2em; }
+  .grid__agents {
+    grid-area: 1 / 5 / 4 / 6;
+    background-color: #eddecd; }
+    .grid__agents h2 {
+      text-align: center;
+      margin-bottom: .5em;
+      color: #faad07; }
+    .grid__agents h3 {
+      text-align: center;
+      color: #faad07; }
+    .grid__agents p {
+      color: #000000; }
+      .grid__agents p--img1 {
+        box-shadow: 8px 4px 17px -7px #ffc76e;
+        transition: all 20ms ease-in; }
+        .grid__agents p--img1:hover {
+          transform: scale(1); }
+      .grid__agents p--img2 {
+        margin-left: 14em;
+        margin-top: -7em;
+        box-shadow: 8px 4px 17px -7px #ffc76e; }
+    .grid__agents__agents--realtors {
+      display: grid;
+      justify-content: center;
+      grid-row-gap: 1em; }
+      .grid__agents__agents--realtors img {
+        width: 120px;
+        height: 100px; }
+      .grid__agents__agents--realtors__btn {
+        background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
+        border: none;
+        width: 20%;
+        padding: 1em 0em;
+        font-weight: bold;
+        border-radius: 10px;
+        left: 10%;
+        position: relative;
+        transform: translateX(-50%);
+        margin-top: 2rem;
+        color: white;
+        cursor: pointer; }
+        .grid__agents__agents--realtors__btn :hover {
+          background-color: black; }
 
 .ziko h1 {
   font-size: 4rem;
@@ -261,8 +323,8 @@ body {
 
 footer {
   background-color: #eddecd;
-  top: 3058px;
-  width: 90.3%;
+  top: 3059px;
+  width: 95%;
   height: 500px; }
   footer ul {
     display: flex;
@@ -300,7 +362,7 @@ footer {
         background-color: #faad07; }
 
 .gallerie {
-  width: 95%;
+  width: 97%;
   display: grid;
   grid-auto-flow: dense;
   grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh
