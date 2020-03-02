@@ -18,11 +18,11 @@ body {
 	color:#555;
 }
 
-#mmeennuu {
+#menu {
 	display:none;
 }
 
-#mmeennuu:checked ~ .menu {
+#menu:checked ~ .menu {
 
 	width:2000%;
 	border-radius:5px;
@@ -46,7 +46,7 @@ body {
 	}
 }
 
-.menu {
+menu {
 	display:block;
 	margin:0px auto;
 	width:50px;
