@@ -149,8 +149,6 @@ body {
       font-size: 1em;
       padding-top: 1em;
       text-align: center; }
-      #ouma .cards .card__content:hover {
-        color: white; }
 
 #ouma .storys {
   display: grid;
