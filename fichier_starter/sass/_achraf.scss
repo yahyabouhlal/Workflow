@@ -1,9 +1,11 @@
-$red:#b4a557;
-$nn:rgb(15, 15, 15);
-$bb:#47c3cd;
+$lux:#b4a557;
+$noir:rgb(15, 15, 15);
+$bleu:#47c3cd;
+
 
 @mixin transition($in) {
-    transition:$in;
+	transition:$in;
+
 }
 
 body {
@@ -13,35 +15,31 @@ body {
 }
 * {
 	font-family:Helvetica,sans-serif;
-    color:$red;
+	color:#555;
 }
 
-
-
+#mmeennuu {
+	display:none;
+}
 
 #mmeennuu:checked ~ .menu {
-    
-    margin:-25% 0% 0% 0%;
+
 	width:2000%;
-	border-radius:0%;
-	background:linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
-	border:3px solid $red;
+	border-radius:5px;
+    background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
 	height:25%;
-
-	&>ul {
-		display:block;
-		opacity:1;
+	position: absolute;
+		z-index: 2;
+		// border: none;
 		
-	border: none;
-    height:25%;
-    position: absolute;
-    z-index: 2;
+	
 
 	&>ul {
-		display:block;
-        opacity:1;
-        
-        
+		display:grid;
+		text-align: center;
+		opacity:1;
+		margin:10% 30% 20% 30%;
+		
 	}
 	&>.barry {
 		display:none;
@@ -50,24 +48,20 @@ body {
 
 .menu {
 	display:block;
-	margin:20px 15px auto;
-	width:60px;
-	height:60px;
-	background-color:$red;
-	margin:2px 6px auto;
-	width:60px;
-	height:60px;
-	background-color:$red;
-	border:1px solid transparent;
+	margin:0px auto;
+	width:50px;
+	height:50px;
+	background-color:$lux;
+	border:3px solid transparent;
 	border-radius:50%;
 	overflow:hidden;
 	cursor:pointer;
 	@include transition(all 0.5s ease-in-out);
 
 	div.barry {
-
 		width:40px;
-		margin:15px auto;
+		margin:35px auto;
+		margin-top: 10px;
 
 
 		.bar {
@@ -80,43 +74,31 @@ body {
 		}
 	}
 
-	ul {
-        margin-top: 7%;
-		opacity:0;
-		display:none;
-		@include transition(all 0.5s ease-in-out);
-		list-style-type:none;
-		padding:0;
-		text-align:center;
-		margin-bottom: 0;
 
+		
+	
 		li {
+			display:inline-block;
 			a {
+				
+				padding: 20px;
 				text-decoration:none;
 				display:inline-block;
-				padding:1%;
-				color:$red;
-				color:$nn;
-				font-size:200%;
+				color:$noir;
+				font-size:30px;
 				@include transition(all 0.3s ease-in-out);
-				border:3px solid transparent;
-                border-radius:5px;
-            
-                
+				
+				
 
 				&:hover {
-                    border-color:$red;
-                    border-color:$nn;
-                    background-color: $bb;
-                    border-radius: 20px;
+					border-radius: 30px;
+					background-color: $bleu;
 				}
 				
 				&:target {
-					// border-bottom-color:$red;
+					// border-bottom-color:$bleu;
 				}
 			}
 		}
-
-	}
-}
+	
 }
