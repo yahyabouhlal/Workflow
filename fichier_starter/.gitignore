@@ -1,1 +1,4 @@
-*_modules
+*modules
+package.json
+package-lock.json
+*.css
