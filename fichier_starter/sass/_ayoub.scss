@@ -34,7 +34,7 @@ $color-fons: #ffffff;
 }
 
 .grid {
-    
+
     &__back{
         grid-area: 1 / 1 / 4 / 5; 
         img{
@@ -88,6 +88,7 @@ $color-fons: #ffffff;
     &__agents{
         grid-area: 1 / 5 / 4 / 6;
         background-color: $color-backagents;
+        height: 500px;
         h2{
             text-align: center;
             margin-bottom: .5em;
