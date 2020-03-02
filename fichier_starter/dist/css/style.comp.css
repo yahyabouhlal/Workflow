@@ -3,7 +3,8 @@ body {
   padding: 0; }
 
 * {
-  font-family: Helvetica,sans-serif; }
+  font-family: Helvetica,sans-serif;
+  color: #b4a557; }
 
 #mmeennuu {
   display: none; }
@@ -13,7 +14,7 @@ body {
   width: 2000%;
   border-radius: 0%;
   background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
-  border: 3px solid #0f0f0f;
+  border: 3px solid #b4a557;
   height: 25%; }
   #mmeennuu:checked ~ .menu > ul {
     display: block;
@@ -26,7 +27,7 @@ body {
   margin: 20px 15px auto;
   width: 60px;
   height: 60px;
-  background-color: #0f0f0f;
+  background-color: #b4a557;
   border: 1px solid transparent;
   border-radius: 50%;
   overflow: hidden;
@@ -55,93 +56,13 @@ body {
       text-decoration: none;
       display: inline-block;
       padding: 1%;
-      color: #0f0f0f;
+      color: #b4a557;
       font-size: 200%;
       transition: all 0.3s ease-in-out;
       border: 3px solid transparent;
       border-radius: 5px; }
       .menu ul li a:hover {
-        border-color: #0f0f0f;
-        background-color: #47c3cd;
-        border-radius: 20px; }
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #222; }
-
-* {
-  font-family: Helvetica,sans-serif;
-  color: #b4a557; }
-
-#mmeennuu {
-  display: none; }
-
-#mmeennuu:checked ~ .menu {
-  margin: 0%;
-  width: 2000%;
-  border-radius: 0%;
-  background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
-  height: 25%; }
-  #mmeennuu:checked ~ .menu > ul {
-    display: block;
-    opacity: 1; }
-  #mmeennuu:checked ~ .menu > .barry {
-    display: none; }
-
-.menu {
-  display: block;
-  margin: 20px 15px auto;
-  width: 60px;
-  height: 60px;
-  background-color: #0f0f0f;
-  border: 1px solid transparent;
-  border-radius: 50%;
-  overflow: hidden;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out; }
-  .menu div.barry {
-    width: 40px;
-    margin: 15px auto; }
-    .menu div.barry .bar {
-      display: block;
-      width: 100%;
-      height: 5px;
-      margin-top: 3px;
-      border-radius: 2px;
-      background-color: #fff; }
-  .menu ul {
-    margin-top: 7%;
-    opacity: 0;
-    display: none;
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    margin-bottom: 0; }
-    .menu ul li a {
-      text-decoration: none;
-      display: inline-block;
-      padding: 1%;
-      color: #0f0f0f;
-      font-size: 200%;
-      transition: all 0.3s ease-in-out;
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      -ms-transition: all 0.3s ease-in-out;
-      border: 3px solid transparent;
-      border-radius: 5px; }
-      .menu ul li a:hover {
-        border-color: #0f0f0f;
+        border-color: #b4a557;
         background-color: #47c3cd;
         border-radius: 20px; }
 
@@ -220,6 +141,10 @@ body {
   .logo img {
     width: 50%;
     color: #d1b58a; }
+    .logo img h1 {
+      font-size: 4rem;
+      font-family: 'Nunito';
+      color: #92704d; }
 
 .grid {
   background: url(/fichier_starter/dist/img/back.jpg);
@@ -238,34 +163,6 @@ body {
       font-size: 2em;
       color: #896749; }
   .grid__title--btn {
-  grid-template-columns: repeat(2, 50%); }
-  .storys__pict img {
-    width: 50%;
-    padding-left: 2em; }
-  .storys__pict--img1 {
-    box-shadow: 8px 4px 17px -7px #ffc76e; }
-  .storys__pict--img2 {
-    margin-left: 14em;
-    margin-top: -7em;
-    box-shadow: 8px 4px 17px -7px #ffc76e; }
-    transition: all 20ms ease-in; }
-    .storys__pict--img1:hover {
-      transform: scale(1); }
-  .storys__pict--img2 {
-    margin-left: 14em;
-    margin-top: -7em; }
-  .storys__text {
-    text-align: center;
-    padding: .3em;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 60%;
-    padding: 3rem;
-    margin: 2rem;
-    line-height: 2;
-    font-size: large; }
-  .storys__btn {
     background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
     border: none;
     width: 20%;
@@ -301,13 +198,37 @@ body {
       color: #faad07; }
     .grid__agents p {
       color: #000000; }
-  .grid__agents--realtors {
-    display: grid;
-    justify-content: center;
-    grid-row-gap: 1em; }
-    .grid__agents--realtors img {
-      width: 120px;
-      height: 100px; }
+      .grid__agents p--img1 {
+        box-shadow: 8px 4px 17px -7px #ffc76e;
+        transition: all 20ms ease-in; }
+        .grid__agents p--img1:hover {
+          transform: scale(1); }
+      .grid__agents p--img2 {
+        margin-left: 14em;
+        margin-top: -7em;
+        box-shadow: 8px 4px 17px -7px #ffc76e; }
+    .grid__agents__agents--realtors {
+      display: grid;
+      justify-content: center;
+      grid-row-gap: 1em; }
+      .grid__agents__agents--realtors img {
+        width: 120px;
+        height: 100px; }
+      .grid__agents__agents--realtors__btn {
+        background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
+        border: none;
+        width: 20%;
+        padding: 1em 0em;
+        font-weight: bold;
+        border-radius: 10px;
+        left: 10%;
+        position: relative;
+        transform: translateX(-50%);
+        margin-top: 2rem;
+        color: white;
+        cursor: pointer; }
+        .grid__agents__agents--realtors__btn :hover {
+          background-color: black; }
 
 .ziko h1 {
   font-size: 4rem;
@@ -391,9 +312,7 @@ footer {
   width: 95%;
   display: grid;
   grid-auto-flow: dense;
-  grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh
- "1fr 1fr 1fr 1fr 1fr" 33.33vh
- "1fr 1fr 1fr 1fr 1fr" 33.33vh; }
+  grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh; }
 
 h1 {
   font-size: 4rem;
@@ -423,8 +342,4 @@ h1 {
 
 @media (max-width: 800px) {
   .gallerie {
-    grid-template: "1fr 1fr 1fr" 250px
- "1fr 1fr 1fr" 250px
- "1fr 1fr 1fr" 250px
- "1fr 1fr 1fr" 250px
- "1fr 1fr 1fr" 250px; } }
+    grid-template: "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px; } }
