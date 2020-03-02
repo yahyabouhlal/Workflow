@@ -56,13 +56,13 @@ body {
       text-decoration: none;
       display: inline-block;
       padding: 1%;
-      color: #b4a557;
+      color: #0f0f0f;
       font-size: 200%;
       transition: all 0.3s ease-in-out;
       border: 3px solid transparent;
       border-radius: 5px; }
       .menu ul li a:hover {
-        border-color: #b4a557;
+        border-color: #0f0f0f;
         background-color: #47c3cd;
         border-radius: 20px; }
 
@@ -129,40 +129,82 @@ body {
   .grid__agents--realtors {
     display: grid;
     justify-content: center;
-    grid-row-gap: 1em; }
+    grid-row-gap: em; }
     .grid__agents--realtors img {
       width: 120px;
       height: 100px; }
 
-.logo {
-  display: grid;
-  justify-items: center;
-  grid-area: 1 / 2 / 2 / 4; }
-  .logo img {
-    width: 50%;
-    color: #d1b58a; }
-    .logo img h1 {
-      font-size: 4rem;
-      font-family: 'Nunito';
-      color: #92704d; }
+.container #ouma h1 {
+  font-size: 4rem;
+  font-family: 'Nunito';
+  color: #92704d; }
 
-.grid {
-  background: url(/fichier_starter/dist/img/back.jpg);
+.container #ouma .cards {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 15px; }
-  .grid__title {
-    grid-area: 2 / 1 / 3 / 5;
-    margin-left: 10em; }
-    .grid__title h1 {
-      font-size: 3em;
-      color: #92704d; }
-    .grid__title p {
-      font-size: 2em;
-      color: #896749; }
-  .grid__title--btn {
+  grid-template-columns: repeat(3, 33.33%);
+  grid-gap: 3em 1em; }
+
+.container #ouma .card {
+  display: flex;
+  place-items: center; }
+  .container #ouma .card__icon {
+    font-size: 3rem;
+    padding: 1em; }
+  .container #ouma .card__content--title {
+    font-weight: bold;
+    padding: .3em; }
+  .container #ouma .card__content--parg {
+    padding: .3em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60%; }
+
+.container #stors .stor {
+  display: grid;
+  grid-template-columns: repeat(2, 50%); }
+  .container #stors .stor__img img {
+    padding: .5em;
+    width: 15rem; }
+  .container #stors .stor__img--img2 {
+    margin-top: -5.9em;
+    margin-left: 8em; }
+  .container #stors .stor__parg--title {
+    text-align: center; }
+
+@media only screen and (max-width: 600px) {
+  .container #ouma .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    text-align: center; } }
+
+.container .storys {
+  display: grid;
+  grid-template-columns: repeat(2, 50%); }
+  .container .storys__pict img {
+    width: 50%;
+    padding-left: 2em; }
+  .container .storys__pict--img1 {
+    box-shadow: 8px 4px 17px -7px #ffc76e;
+    transition: all 20ms ease-in; }
+    .container .storys__pict--img1:hover {
+      transform: scale(1); }
+  .container .storys__pict--img2 {
+    margin-left: 14em;
+    margin-top: -7em;
+    box-shadow: 8px 4px 17px -7px #ffc76e; }
+  .container .storys__text {
+    text-align: center;
+    padding: .3em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    padding: 3rem;
+    margin: 2rem;
+    line-height: 2;
+    font-size: large; }
+  .container .storys__btn {
     background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
     border: none;
     width: 20%;
@@ -270,7 +312,10 @@ body {
     text-align: center; } }
 
 footer {
-  background-color: #eddecd; }
+  background-color: #eddecd;
+  top: 3059px;
+  width: 95%;
+  height: 500px; }
   footer ul {
     display: flex;
     justify-content: space-around;
@@ -282,9 +327,7 @@ footer {
     display: flex;
     justify-content: center; }
     footer .footer img {
-      position: absolute;
-      top: 20%;
-      width: 20%; }
+      position: absolute; }
   footer .copy-right {
     display: grid;
     grid-template-columns: repeat(2, 50%); }
@@ -309,10 +352,12 @@ footer {
         background-color: #faad07; }
 
 .gallerie {
-  width: 95%;
+  width: 97%;
   display: grid;
   grid-auto-flow: dense;
-  grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh; }
+  grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh
+ "1fr 1fr 1fr 1fr 1fr" 33.33vh
+ "1fr 1fr 1fr 1fr 1fr" 33.33vh; }
 
 h1 {
   font-size: 4rem;
@@ -342,4 +387,8 @@ h1 {
 
 @media (max-width: 800px) {
   .gallerie {
-    grid-template: "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px; } }
+    grid-template: "1fr 1fr 1fr" 250px
+ "1fr 1fr 1fr" 250px
+ "1fr 1fr 1fr" 250px
+ "1fr 1fr 1fr" 250px
+ "1fr 1fr 1fr" 250px; } }

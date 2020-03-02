@@ -9,25 +9,38 @@ $bb:#47c3cd;
 body {
 	margin:0;
 	padding:0;
-	
+	// background-color:#222;
 }
 * {
 	font-family:Helvetica,sans-serif;
     color:$red;
 }
+{
+    color:$lred;
+   
 
-#mmeennuu {
-	display:none;
 }
+
+
+
 
 #mmeennuu:checked ~ .menu {
     
-    margin:0%;
+    margin:-25% 0% 0% 0%;
 	width:2000%;
 	border-radius:0%;
 	background:linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
 	border:3px solid $red;
 	height:25%;
+
+	&>ul {
+		display:block;
+		opacity:1;
+		
+	border: none;
+    height:25%;
+    position: absolute;
+    z-index: 2;
 
 	&>ul {
 		display:block;
@@ -46,6 +59,10 @@ body {
 	width:60px;
 	height:60px;
 	background-color:$red;
+	margin:2px 6px auto;
+	width:60px;
+	height:60px;
+	background-color:$lred;
 	border:1px solid transparent;
 	border-radius:50%;
 	overflow:hidden;
@@ -84,6 +101,7 @@ body {
 				display:inline-block;
 				padding:1%;
 				color:$red;
+				color:$nn;
 				font-size:200%;
 				@include transition(all 0.3s ease-in-out);
 				border:3px solid transparent;
@@ -93,6 +111,7 @@ body {
 
 				&:hover {
                     border-color:$red;
+                    border-color:$nn;
                     background-color: $bb;
                     border-radius: 20px;
 				}

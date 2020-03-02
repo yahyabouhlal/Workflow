@@ -101,7 +101,7 @@ $color-fons: #ffffff;
     &__agents--realtors{
         display: grid;
         justify-content: center;
-        grid-row-gap: 1em;
+        grid-row-gap: em;
         
         img{
         width: 120px;
