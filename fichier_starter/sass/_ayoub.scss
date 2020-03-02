@@ -34,12 +34,16 @@ $color-fons: #ffffff;
 }
 
 .grid {
+
+    &__back{
+        grid-area: 1 / 1 / 4 / 5; 
+        img{
+            width: 100%;
+            height: 500px;
+        }
+        
+    }
     
-    background: url(/fichier_starter/dist/img/photo-1505410603994-c3ac6269711f.jpeg);
-    
-    
-    
-    // background-repeat: no-repeat;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -84,6 +88,7 @@ $color-fons: #ffffff;
     &__agents{
         grid-area: 1 / 5 / 4 / 6;
         background-color: $color-backagents;
+        height: 500px;
         h2{
             text-align: center;
             margin-bottom: .5em;
