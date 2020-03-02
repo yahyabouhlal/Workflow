@@ -138,25 +138,33 @@ body {
   #ouma .cards .card {
     display: flex;
     padding: 3em; }
+    #ouma .cards .card:hover {
+      background-color: #cdcb76;
+      border-radius: 20px; }
     #ouma .cards .card__icon {
       font-size: 3em;
-      padding-right: .6em;
+      padding-right: 0.6em;
       padding-bottom: 1em; }
     #ouma .cards .card__content {
       font-size: 1em;
       padding-top: 1em;
       text-align: center; }
+      #ouma .cards .card__content:hover {
+        color: white; }
 
 #ouma .storys {
   display: grid;
   grid-template-columns: repeat(2, 50%); }
-  #ouma .storys__pict {
-    grid-column: 1/2; }
-    #ouma .storys__pict img {
-      width: 50%; }
-    #ouma .storys__pict--img2 {
-      margin-top: -12%;
-      margin-left: 23%; }
+  #ouma .storys__pict h1 {
+    justify-content: start;
+    display: flex;
+    padding-bottom: .4em; }
+  #ouma .storys__pict img {
+    width: 50%;
+    box-shadow: 8px 4px 17px -7px #ffc76e; }
+  #ouma .storys__pict--img2 {
+    margin-top: -12%;
+    margin-left: 23%; }
   #ouma .storys__text {
     width: 80%;
     position: relative;
@@ -165,7 +173,8 @@ body {
       padding-bottom: 1em;
       text-align: center; }
     #ouma .storys__text p {
-      text-align: center; }
+      text-align: center;
+      line-height: 2em; }
     #ouma .storys__text button {
       background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
       border: none;
@@ -179,6 +188,46 @@ body {
       position: relative;
       transform: translateX(-50%);
       left: 50%; }
+
+@media only screen and (max-width: 800px) {
+  #ouma .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 50%); }
+    #ouma .cards .card {
+      display: flex;
+      padding: 3em; }
+      #ouma .cards .card__icon {
+        font-size: 3em;
+        padding-right: 0.6em;
+        padding-bottom: 1em; }
+      #ouma .cards .card__content {
+        font-size: 1em;
+        padding-top: 1em;
+        text-align: center; }
+  #ouma .storys {
+    display: grid;
+    grid-template-columns: repeat(1, 100%); }
+    #ouma .storys__pict {
+      text-align: center; }
+    #ouma .storys__text {
+      text-align: center;
+      position: relative;
+      transform: translateX(-50%);
+      top: 2em;
+      left: 50%;
+      padding-bottom: 9em; }
+      #ouma .storys__text button {
+        background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
+        border: none;
+        width: 20%;
+        padding: 1em 0em;
+        font-weight: bold;
+        border-radius: 10px;
+        margin-top: 2rem;
+        color: white;
+        cursor: pointer;
+        transform: translateX(0%);
+        left: 0%; } }
 
 .ziko h1 {
   font-size: 4rem;
@@ -200,6 +249,13 @@ body {
     margin-top: 1em; }
     .ziko__grid--maison img {
       width: 100%; }
+    .ziko__grid--maison .name {
+      background-color: #faad07;
+      transform: translate(50%, -50%);
+      width: 50%;
+      padding: .4em 0; }
+      .ziko__grid--maison .name p {
+        color: white; }
     .ziko__grid--maison ul li {
       display: grid;
       grid-template-columns: repeat(2, 50%);
@@ -213,7 +269,7 @@ body {
       font-weight: bold;
       border-radius: 10px; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .ziko__grid {
     display: grid;
     grid-template-columns: repeat(2, 50%);
