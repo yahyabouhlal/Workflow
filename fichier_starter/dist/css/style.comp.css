@@ -66,7 +66,8 @@ body {
 .logo {
   display: grid;
   justify-items: center;
-  grid-area: 1 / 2 / 2 / 4; }
+  grid-area: 1 / 2 / 2 / 4;
+  padding-bottom: 3em; }
   .logo img {
     width: 50%;
     color: #d1b58a; }
@@ -74,7 +75,7 @@ body {
 .grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 15px; }
   .grid__back {
@@ -127,7 +128,7 @@ body {
     .grid__title--logos img {
       width: 15%;
       height: 3em;
-      padding: 3.5em; }
+      padding: 3.3em; }
   .grid__agents {
     grid-area: 1 / 5 / 4 / 6;
     background-color: #eddecd;
@@ -164,7 +165,7 @@ body {
       .grid__title p {
         font-size: 20px; }
     .grid__title--logos img {
-      padding: 2.2em; } }
+      padding: 2.1em; } }
 
 #ouma .cards {
   display: grid;
