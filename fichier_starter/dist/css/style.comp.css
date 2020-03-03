@@ -106,11 +106,24 @@ body {
     .grid__title--logos h4 {
       text-align: center;
       font-size: 2em;
-      color: #ffffff; }
+      color: #ffffff;
+      margin-top: 1em;
+      text-transform: uppercase; }
+    .grid__title--logos h4.no-span {
+      display: table;
+      white-space: nowrap; }
+    .grid__title--logos h4.no-span:before,
+    .grid__title--logos h4.no-span:after {
+      border-top: 0.1em solid #ffffff;
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 0.5em;
+      width: 45%; }
     .grid__title--logos img {
-      width: 13.5em;
+      width: 15%;
       height: 3em;
-      padding: 2em; }
+      padding: 3.5em; }
   .grid__agents {
     grid-area: 1 / 5 / 4 / 6;
     background-color: #eddecd;
@@ -123,6 +136,7 @@ body {
       text-align: center;
       color: #faad07; }
     .grid__agents p {
+      text-align: center;
       color: #000000; }
   .grid__agents--realtors {
     display: grid;
@@ -131,6 +145,22 @@ body {
     .grid__agents--realtors img {
       width: 120px;
       height: 100px; }
+
+@media only screen and (max-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr); }
+    .grid__agents {
+      display: none; }
+    .grid__title {
+      text-align: center;
+      margin: 0;
+      margin-top: 3em; }
+      .grid__title h1 {
+        font-size: 30px; }
+      .grid__title p {
+        font-size: 20px; }
+    .grid__title--logos img {
+      padding: 2.2em; } }
 
 #ouma .cards {
   display: grid;
