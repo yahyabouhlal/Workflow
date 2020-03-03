@@ -1,14 +1,15 @@
 .gallerie{
-    width: 97%;
+    width: 100%;
     display: grid;
-    // position: absolute;
-    // top: 2000px;
-    // left: 5%;
+    
+
+    
     grid-auto-flow: dense;
     grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh
                    "1fr 1fr 1fr 1fr 1fr" 33.33vh
+                   
                    "1fr 1fr 1fr 1fr 1fr" 33.33vh;
-    //    grid-gap: 5px;            
+       grid-gap: 5px;            
     
     }
 
@@ -17,29 +18,33 @@
         font-size: 4rem;
         font-family: "Nunito";
         color: #faad07;
-        
+
     }
     .gallerie .box{
-        position: relative;
-        background-color: gray;
+        overflow: hidden;
+    }
+   
+    .gallerie .box img{
+        transition: transform 1s;
+    }
+    .gallerie .box:hover img{
+        transform:scale(1.2);
+    }
     
-    }
-    .gallerie .box.a{
-        grid-row: span 2;
-    }
     .gallerie .box.b,
     .gallerie .box.f,
     .gallerie .box.h,
     .gallerie .box.j{
         grid-column: span 2;
     }
+    
     .gallerie .box img{
-        position: absolute;
-        top: 0;
-        left: 0;
+        
+        
+        
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        
     }
     @media  (max-width: 800px){ 
     .gallerie {

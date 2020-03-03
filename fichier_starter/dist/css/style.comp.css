@@ -10,10 +10,10 @@ body {
   display: none; }
 
 #mmeennuu:checked ~ .menu {
-  width: 2000%;
+  width: 100%;
   border-radius: 5px;
   background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
-  height: 25%;
+  height: 100%;
   position: absolute;
   z-index: 2; }
   #mmeennuu:checked ~ .menu > ul {
@@ -25,6 +25,7 @@ body {
     display: none; }
 
 .menu {
+  position: fixed;
   display: block;
   margin: 0px auto;
   width: 50px;
@@ -33,18 +34,17 @@ body {
   border: 3px solid transparent;
   border-radius: 50%;
   overflow: hidden;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out; }
+  cursor: pointer; }
   .menu div.barry {
     width: 40px;
-    margin: 35px auto;
+    margin: 4px;
     margin-top: 10px; }
     .menu div.barry .bar {
       display: block;
       width: 100%;
-      height: 5px;
+      height: 0.3rem;
       margin-top: 3px;
-      border-radius: 2px;
+      border-radius: 2rem;
       background-color: #fff; }
   .menu li {
     display: inline-block; }
@@ -53,11 +53,15 @@ body {
       text-decoration: none;
       display: inline-block;
       color: #0f0f0f;
-      font-size: 30px;
-      transition: all 0.3s ease-in-out; }
+      font-size: 30px; }
       .menu li a:hover {
         border-radius: 30px;
         background-color: #47c3cd; }
+
+@media only screen and (max-width: 900px) {
+  .menu {
+    width: 30px;
+    height: 30px; } }
 
 .logo {
   display: grid;
@@ -179,8 +183,6 @@ body {
       font-size: 1em;
       padding-top: 1em;
       text-align: center; }
-      #ouma .cards .card__content:hover {
-        color: white; }
 
 #ouma .storys {
   display: grid;
@@ -307,31 +309,34 @@ body {
 
 footer {
   background-color: #eddecd;
-  top: 3059px;
-  width: 95%;
-  height: 500px; }
+  width: 100%;
+  height: 25em; }
   footer ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    font-size: 1.3em; }
+    font-size: 1.3em;
+    padding-top: 3em; }
     footer ul li a {
       text-decoration: none; }
   footer .footer {
     display: flex;
     justify-content: center; }
     footer .footer img {
-      position: absolute; }
+      padding-top: 1em;
+      position: absolute;
+      width: 20%;
+      padding-top: 4em; }
   footer .copy-right {
     display: grid;
     grid-template-columns: repeat(2, 50%); }
     footer .copy-right .copy {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateY(-50%);
+      position: relative;
+      top: 400%;
+      left: 100%;
       display: flex;
-      transform: translateX(-50%); }
+      transform: translateX(-50%);
+      padding-top: 1em; }
     footer .copy-right .message {
       transform: translateY(-25%); }
       footer .copy-right .message input[type="text"] {
@@ -346,10 +351,11 @@ footer {
         background-color: #faad07; }
 
 .gallerie {
-  width: 97%;
+  width: 100%;
   display: grid;
   grid-auto-flow: dense;
-  grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh; }
+  grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh  "1fr 1fr 1fr 1fr 1fr" 33.33vh;
+  grid-gap: 5px; }
 
 h1 {
   font-size: 4rem;
@@ -357,11 +363,13 @@ h1 {
   color: #faad07; }
 
 .gallerie .box {
-  position: relative;
-  background-color: gray; }
+  overflow: hidden; }
 
-.gallerie .box.a {
-  grid-row: span 2; }
+.gallerie .box img {
+  transition: transform 1s; }
+
+.gallerie .box:hover img {
+  transform: scale(1.2); }
 
 .gallerie .box.b,
 .gallerie .box.f,
@@ -370,13 +378,31 @@ h1 {
   grid-column: span 2; }
 
 .gallerie .box img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover; }
+  height: 100%; }
 
 @media (max-width: 800px) {
   .gallerie {
     grid-template: "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px; } }
+
+.ouma .grids {
+  display: grid;
+  grid-template-columns: repeat(1, 100%); }
+  .ouma .grids .grid__pict img {
+    width: 50%; }
+  .ouma .grids .grid__text h2 {
+    font-weight: lighter;
+    color: #92704d; }
+  .ouma .grids .grid__text h3 {
+    font-weight: lighter; }
+  .ouma .grids .grid__btn {
+    background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
+    padding: 1em 5em;
+    font-weight: bold;
+    border-radius: 10px;
+    left: 10%;
+    position: relative;
+    transform: translateX(-50%);
+    margin-top: 2rem;
+    color: white;
+    cursor: pointer; }
