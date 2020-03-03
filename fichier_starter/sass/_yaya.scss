@@ -20,8 +20,16 @@
         color: #faad07;
 
     }
+    .gallerie .box{
+        overflow: hidden;
+    }
    
-    
+    .gallerie .box img{
+        transition: transform 1s;
+    }
+    .gallerie .box:hover img{
+        transform:scale(1.2);
+    }
     
     .gallerie .box.b,
     .gallerie .box.f,
