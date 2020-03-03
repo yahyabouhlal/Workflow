@@ -348,3 +348,9 @@ h1 {
 @media (max-width: 800px) {
   .gallerie {
     grid-template: "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px; } }
+
+.ouma .grids {
+  display: grid;
+  grid-template-columns: repeat(1, 100%); }
+  .ouma .grids .grid__pict img {
+    width: 50%; }
