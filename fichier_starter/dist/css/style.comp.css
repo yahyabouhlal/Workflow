@@ -165,7 +165,8 @@ body {
     display: flex;
     padding-bottom: .4em; }
   #ouma .storys__pict img {
-    width: 50%; }
+    width: 50%;
+    box-shadow: 8px 4px 17px -7px #ffc76e; }
   #ouma .storys__pict--img2 {
     margin-top: -12%;
     margin-left: 23%; }
