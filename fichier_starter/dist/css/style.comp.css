@@ -146,7 +146,7 @@ body {
   .grid__agents--realtors {
     display: grid;
     justify-content: center;
-    grid-row-gap: em; }
+    grid-row-gap: 1em; }
     .grid__agents--realtors img {
       width: 120px;
       height: 100px; }
