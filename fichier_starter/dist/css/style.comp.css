@@ -10,10 +10,10 @@ body {
   display: none; }
 
 #mmeennuu:checked ~ .menu {
-  width: 2000%;
+  width: 100%;
   border-radius: 5px;
   background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
-  height: 25%;
+  height: 100%;
   position: absolute;
   z-index: 2; }
   #mmeennuu:checked ~ .menu > ul {
