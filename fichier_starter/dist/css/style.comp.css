@@ -280,31 +280,34 @@ body {
 
 footer {
   background-color: #eddecd;
-  top: 3059px;
-  width: 95%;
-  height: 500px; }
+  width: 100%;
+  height: 25em; }
   footer ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    font-size: 1.3em; }
+    font-size: 1.3em;
+    padding-top: 3em; }
     footer ul li a {
       text-decoration: none; }
   footer .footer {
     display: flex;
     justify-content: center; }
     footer .footer img {
-      position: absolute; }
+      padding-top: 1em;
+      position: absolute;
+      width: 20%;
+      padding-top: 4em; }
   footer .copy-right {
     display: grid;
     grid-template-columns: repeat(2, 50%); }
     footer .copy-right .copy {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateY(-50%);
+      position: relative;
+      top: 400%;
+      left: 100%;
       display: flex;
-      transform: translateX(-50%); }
+      transform: translateX(-50%);
+      padding-top: 1em; }
     footer .copy-right .message {
       transform: translateY(-25%); }
       footer .copy-right .message input[type="text"] {
