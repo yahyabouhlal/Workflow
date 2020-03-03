@@ -77,11 +77,27 @@ $color-fons: #ffffff;
             text-align: center;
             font-size: 2em;
             color: $color-fons;
+            margin-top: 1em;
+            text-transform: uppercase;
         }
+        h4.no-span {
+            display: table;
+            white-space: nowrap;
+          }
+        h4.no-span:before,
+        h4.no-span:after{
+            border-top: 0.1em  solid $color-fons;
+            
+            content: '';
+            display: table-cell;
+            position: relative;
+            top: 0.5em;
+            width: 45%;
+        }  
         img{
-            width: 13.5em;
+            width: 15%;
             height: 3em;
-            padding: 2em;
+            padding: 3.5em;
         }
 
     }
@@ -99,6 +115,7 @@ $color-fons: #ffffff;
             color: $color-textagents;
         }
         p{
+            text-align: center;
             color:$color-nomagents ;
             
         }
@@ -115,8 +132,39 @@ $color-fons: #ffffff;
         }
     }
 
+    }
 
-    
+    @media only screen and (max-width: 800px){
+       .grid{
+        
+        grid-template-columns: repeat(4, 1fr);
+       &__agents{
+           display: none;
+       }
+       &__title{
+        text-align: center;
+        margin: 0;
+        margin-top: 3em;
+        h1{
+            font-size: 30px;
+        }
+        p{
+            font-size: 20px;
+        }
+
+        }
+        &__title--logos{
+            img{
+                padding: 2.2em;
+
+
+            }
+        }
+        
+        
+       } 
+
+        
     }
     
     
