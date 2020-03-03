@@ -92,7 +92,10 @@ footer {
       }
 
       &:hover{
-        background-color: #47c3cd;
+        
+        border-bottom: 0.2em solid #47c3cd;
+        border-bottom-width: thick;
+        color: #47c3cd;
       }
     }
   }
