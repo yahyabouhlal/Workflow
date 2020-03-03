@@ -288,6 +288,8 @@ footer {
     padding-top: 3em; }
     footer ul li a {
       text-decoration: none; }
+    footer ul li:hover {
+      background-color: #47c3cd; }
   footer .footer {
     display: flex;
     justify-content: center; }
@@ -318,6 +320,24 @@ footer {
         border: none;
         padding: 0.3em 1em;
         background-color: #faad07; }
+
+@media only screen and (max-width: 800px) {
+  footer {
+    height: 26em; }
+    footer ul {
+      display: block;
+      text-align: center; }
+    footer .footer img {
+      position: none; }
+    footer .copy-right .copy {
+      position: relative;
+      top: 130%;
+      left: 100%;
+      display: block;
+      text-align: center; }
+    footer .copy-right .message {
+      transform: translateY(0%);
+      text-align: center; } }
 
 .gallerie {
   width: 100%;
