@@ -26,6 +26,7 @@ $color-fons: #ffffff;
     display: grid;
     justify-items: center;
     grid-area: 1 / 2 / 2 / 4; 
+    padding-bottom: 3em;
     
     img{
         width: 50%;
@@ -46,12 +47,13 @@ $color-fons: #ffffff;
     
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 15px;
     &__title{
         grid-area: 2 / 1 / 3 / 5;
         margin-left: 10em;
+        
        
         
         
@@ -97,7 +99,8 @@ $color-fons: #ffffff;
         img{
             width: 15%;
             height: 3em;
-            padding: 3.5em;
+            padding: 3.3em;
+            
         }
 
     }
@@ -105,10 +108,13 @@ $color-fons: #ffffff;
         grid-area: 1 / 5 / 4 / 6;
         background-color: $color-backagents;
         height: 500px;
+        
+        
         h2{
             text-align: center;
             margin-bottom: .5em;
             color: $color-textagents;
+            
         }
         h3{
             text-align: center;
@@ -123,7 +129,7 @@ $color-fons: #ffffff;
     &__agents--realtors{
         display: grid;
         justify-content: center;
-        grid-row-gap: em;
+        grid-row-gap: 1em;
         
         img{
         width: 120px;
@@ -155,7 +161,7 @@ $color-fons: #ffffff;
         }
         &__title--logos{
             img{
-                padding: 2.2em;
+                padding: 2.1em;
 
 
             }
