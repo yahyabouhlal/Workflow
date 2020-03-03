@@ -201,7 +201,8 @@ body {
     #ouma .storys__pict--img1:hover {
       transform: scale(1.2);
       border: solid 2px #47c3cd;
-      border-radius: 10px; }
+      border-radius: 10px;
+      z-index: 1; }
   #ouma .storys__pict--img2 {
     margin-top: -12%;
     margin-left: 23%;
