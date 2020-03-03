@@ -27,7 +27,7 @@ body {
 .menu {
   position: fixed;
   display: block;
-  margin: 0px auto;
+  margin: 0px 9px auto;
   width: 50px;
   height: 50px;
   background-color: #b4a557;
@@ -191,13 +191,27 @@ body {
   #ouma .storys__pict h1 {
     justify-content: start;
     display: flex;
-    padding-bottom: .4em; }
+    padding-bottom: 0.4em; }
   #ouma .storys__pict img {
     width: 50%;
-    box-shadow: 8px 4px 17px -7px #ffc76e; }
+    box-shadow: 8px 4px 17px -7px #ffc76e;
+    position: relative;
+    left: 5em; }
+  #ouma .storys__pict--img1 {
+    transition: transform 1s; }
+    #ouma .storys__pict--img1:hover {
+      transform: scale(1.2);
+      border: solid 2px #47c3cd;
+      border-radius: 10px;
+      z-index: 1; }
   #ouma .storys__pict--img2 {
     margin-top: -12%;
-    margin-left: 23%; }
+    margin-left: 23%;
+    transition: transform 1s; }
+    #ouma .storys__pict--img2:hover {
+      transform: scale(1.2);
+      border: solid 2px #47c3cd;
+      border-radius: 10px; }
   #ouma .storys__text {
     width: 80%;
     position: relative;
@@ -242,6 +256,8 @@ body {
     grid-template-columns: repeat(1, 100%); }
     #ouma .storys__pict {
       text-align: center; }
+      #ouma .storys__pict img {
+        left: 0em; }
     #ouma .storys__text {
       text-align: center;
       position: relative;
@@ -279,9 +295,13 @@ body {
     transform: translateX(-50%);
     box-shadow: 8px 4px 17px -7px #ffc76e;
     border-radius: 10px;
-    margin-top: 1em; }
+    margin-top: 1em;
+    overflow: hidden; }
     .ziko__grid--maison img {
-      width: 100%; }
+      width: 100%;
+      transition: transform 1s; }
+      .ziko__grid--maison img:hover {
+        transform: scale(1.2); }
     .ziko__grid--maison .name {
       background-color: #faad07;
       transform: translate(50%, -50%);
@@ -320,6 +340,10 @@ footer {
     padding-top: 3em; }
     footer ul li a {
       text-decoration: none; }
+    footer ul li:hover {
+      border-bottom: 0.2em solid #47c3cd;
+      border-bottom-width: thick;
+      color: #47c3cd; }
   footer .footer {
     display: flex;
     justify-content: center; }
@@ -350,6 +374,24 @@ footer {
         border: none;
         padding: 0.3em 1em;
         background-color: #faad07; }
+
+@media only screen and (max-width: 800px) {
+  footer {
+    height: 26em; }
+    footer ul {
+      display: block;
+      text-align: center; }
+    footer .footer img {
+      position: none; }
+    footer .copy-right .copy {
+      position: relative;
+      top: 130%;
+      left: 100%;
+      display: block;
+      text-align: center; }
+    footer .copy-right .message {
+      transform: translateY(0%);
+      text-align: center; } }
 
 .gallerie {
   width: 100%;
@@ -386,24 +428,41 @@ h1 {
   .gallerie {
     grid-template: "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px; } }
 
-.ouma .grids {
-  display: grid;
-  grid-template-columns: repeat(1, 100%); }
-  .ouma .grids .grid__pict img {
-    width: 50%; }
-  .ouma .grids .grid__text h2 {
-    font-weight: lighter;
-    color: #92704d; }
-  .ouma .grids .grid__text h3 {
-    font-weight: lighter; }
-  .ouma .grids .grid__btn {
-    background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
-    padding: 1em 5em;
-    font-weight: bold;
-    border-radius: 10px;
-    left: 10%;
-    position: relative;
-    transform: translateX(-50%);
-    margin-top: 2rem;
-    color: white;
-    cursor: pointer; }
+.ouma {
+  text-align: center;
+  padding: 1rem; }
+  .ouma .grids {
+    display: grid;
+    grid-template-columns: repeat(1, 100%); }
+    .ouma .grids .grid__pict img {
+      width: 30rem;
+      box-shadow: 8px 4px 17px -7px #ffc76e; }
+    .ouma .grids .grid__text {
+      padding-left: 10rem;
+      padding-top: 3rem; }
+      .ouma .grids .grid__text h2 {
+        text-align: start;
+        font-weight: lighter;
+        color: #92704d; }
+      .ouma .grids .grid__text h3 {
+        text-align: start;
+        font-weight: lighter; }
+    .ouma .grids .grid .para {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      column-gap: 5rem;
+      width: 30rem;
+      line-height: 2rem; }
+    .ouma .grids .grid__btn {
+      background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
+      padding: 1em 5em;
+      font-weight: bold;
+      border-radius: 10px;
+      left: 10%;
+      position: relative;
+      transform: translateX(-50%);
+      margin-top: 2rem;
+      color: white;
+      cursor: pointer;
+      transform: translateX(0%);
+      left: 0%; }
