@@ -14,50 +14,27 @@
   <title>CLASS1 &mdash; First-app</title>
 </head>
 <style>
-  * {
-    margin: 0;
-    padding: 0;
+    *{
+    margin 0;
+    padding 0;
   }
-
-  header {
-    position: absolute;
-    top: 0;
-    left: 5%;
-    background-color: yellow;
-    width: 95%;
-    height: 500px;
+  .grid-container {
+    display :grid;
+    grid-template-columns :10% auto;
+    grid-gap :1em;
+    grid-auto-rows :minmax(200px ,auto);
+    background-color :blue;
   }
-
-  aside {
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* background-color: orangered; */
-    width: 5%;
-    height: 3000px;
+  .grid-container  div{
+    background-color : skyblue;
 
   }
-
-  section {
-    position: absolute;
-    top: 500px;
-    left: 5%;
-    /* background-color: blue; */
-    width: 95%px;
-    height: 2500px;
-  }
-
-  footer {
-    position: absolute;
-    top: 2500px;
-    left: 5%;
-    /* background-color: cyan; */
-    width:95%;
-    height: 500px;
-  }
+  .item1 {
+  grid-row-start :1;
+  grid-row-end : 7;
+}
 </style>
-
-<body class="container">
+<body>
   <!-- Ayoube essafi -->
   <header class="grid">
     <div class="grid__back">
@@ -97,7 +74,7 @@
 
   </header>
   <!-- Achraf elhour -->
-  <aside>
+  <aside class=".item1">
     <input type='checkbox' id='mmeennuu'>
     <label class='menu' for='mmeennuu'>
 
