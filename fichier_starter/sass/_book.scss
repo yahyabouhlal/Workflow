@@ -21,17 +21,22 @@ $color-fons: #ffffff;
 }
 
 .ouma{
+    text-align: center;
+    padding: 3rem;
     .grids{
         display: grid;
         grid-template-columns: repeat(1, 100%);
         .grid{
             &__pict{
                 img{
-                    width: 50%;
-                    
+                    width: 30rem;
+                    box-shadow: 8px 4px 17px -7px rgba(255, 199, 110, 1);
                 }
+                
             }
             &__text{
+                padding-left: 20rem;
+                
             h2{
                 font-weight: lighter;
                 color: $color-title;
@@ -39,10 +44,15 @@ $color-fons: #ffffff;
             h3{
                 font-weight: lighter;
             }
-           
+            }
+            .para{
+                display: grid;
+                grid-template-columns: repeat(2,50%);
             }
             &__btn{
                 @include btn();
+                transform: translateX(0%);
+                left: 0%;
             }
             
         }
