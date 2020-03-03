@@ -71,14 +71,15 @@
 
 footer {
   background-color: #eddecd;
-  top:3059px;
-  width: 95%;
-  height: 500px;
+  
+  width: 100%;
+  height: 25em;
   ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
     font-size: 1.3em;
+    padding-top: 3em;
     li {
       a {
         text-decoration: none;
@@ -89,12 +90,10 @@ footer {
     display: flex;
     justify-content: center;
     img {
+      padding-top: 1em;
       position: absolute;
-     
-     
-      
-      
-
+      width: 20%;
+      padding-top: 4em;
     }
   }
   .copy-right {
@@ -102,12 +101,12 @@ footer {
     grid-template-columns: repeat(2, 50%);
 
     .copy {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateY(-50%);
+      position: relative;
+      top: 400%;
+      left: 100%;
       display: flex;
       transform: translateX(-50%);
+      padding-top: 1em;
     }
 
     .message {
