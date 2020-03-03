@@ -3,18 +3,12 @@ $noir:rgb(15, 15, 15);
 $bleu:#47c3cd;
 
 
-@mixin transition($in) {
-	transition:$in;
-	
-
-}
-
 body {
 	margin:0;
 	padding:0;
 	// background-color:#222;
-}
-* {
+     }
+*{
 	font-family:Helvetica,sans-serif;
 	color:#555;
 }
@@ -57,7 +51,6 @@ body {
 	border-radius:50%;
 	overflow:hidden;
 	cursor:pointer;
-	@include transition(all 0.5s ease-in-out);
 
 	div.barry {
 		width:40px;
@@ -87,7 +80,6 @@ body {
 				display:inline-block;
 				color:$noir;
 				font-size:30px;
-				@include transition(all 0.3s ease-in-out);
 				
 				
 
