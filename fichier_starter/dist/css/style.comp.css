@@ -322,7 +322,7 @@ footer {
         background-color: #faad07; }
 
 .gallerie {
-  width: 97%;
+  width: 100%;
   display: grid;
   grid-auto-flow: dense;
   grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh  "1fr 1fr 1fr 1fr 1fr" 33.33vh;
