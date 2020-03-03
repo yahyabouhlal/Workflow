@@ -110,11 +110,24 @@ body {
     .grid__title--logos h4 {
       text-align: center;
       font-size: 2em;
-      color: #ffffff; }
+      color: #ffffff;
+      margin-top: 1em;
+      text-transform: uppercase; }
+    .grid__title--logos h4.no-span {
+      display: table;
+      white-space: nowrap; }
+    .grid__title--logos h4.no-span:before,
+    .grid__title--logos h4.no-span:after {
+      border-top: 0.1em solid #ffffff;
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 0.5em;
+      width: 45%; }
     .grid__title--logos img {
-      width: 13.5em;
+      width: 15%;
       height: 3em;
-      padding: 2em; }
+      padding: 3.5em; }
   .grid__agents {
     grid-area: 1 / 5 / 4 / 6;
     background-color: #eddecd;
@@ -127,6 +140,7 @@ body {
       text-align: center;
       color: #faad07; }
     .grid__agents p {
+      text-align: center;
       color: #000000; }
   .grid__agents--realtors {
     display: grid;
@@ -135,6 +149,22 @@ body {
     .grid__agents--realtors img {
       width: 120px;
       height: 100px; }
+
+@media only screen and (max-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr); }
+    .grid__agents {
+      display: none; }
+    .grid__title {
+      text-align: center;
+      margin: 0;
+      margin-top: 3em; }
+      .grid__title h1 {
+        font-size: 30px; }
+      .grid__title p {
+        font-size: 20px; }
+    .grid__title--logos img {
+      padding: 2.2em; } }
 
 #ouma .cards {
   display: grid;
@@ -160,13 +190,27 @@ body {
   #ouma .storys__pict h1 {
     justify-content: start;
     display: flex;
-    padding-bottom: .4em; }
+    padding-bottom: 0.4em; }
   #ouma .storys__pict img {
     width: 50%;
-    box-shadow: 8px 4px 17px -7px #ffc76e; }
+    box-shadow: 8px 4px 17px -7px #ffc76e;
+    position: relative;
+    left: 5em; }
+  #ouma .storys__pict--img1 {
+    transition: transform 1s; }
+    #ouma .storys__pict--img1:hover {
+      transform: scale(1.2);
+      border: solid 2px #47c3cd;
+      border-radius: 10px;
+      z-index: 1; }
   #ouma .storys__pict--img2 {
     margin-top: -12%;
-    margin-left: 23%; }
+    margin-left: 23%;
+    transition: transform 1s; }
+    #ouma .storys__pict--img2:hover {
+      transform: scale(1.2);
+      border: solid 2px #47c3cd;
+      border-radius: 10px; }
   #ouma .storys__text {
     width: 80%;
     position: relative;
@@ -211,6 +255,8 @@ body {
     grid-template-columns: repeat(1, 100%); }
     #ouma .storys__pict {
       text-align: center; }
+      #ouma .storys__pict img {
+        left: 0em; }
     #ouma .storys__text {
       text-align: center;
       position: relative;
@@ -248,9 +294,13 @@ body {
     transform: translateX(-50%);
     box-shadow: 8px 4px 17px -7px #ffc76e;
     border-radius: 10px;
-    margin-top: 1em; }
+    margin-top: 1em;
+    overflow: hidden; }
     .ziko__grid--maison img {
-      width: 100%; }
+      width: 100%;
+      transition: transform 1s; }
+      .ziko__grid--maison img:hover {
+        transform: scale(1.2); }
     .ziko__grid--maison .name {
       background-color: #faad07;
       transform: translate(50%, -50%);
@@ -289,6 +339,8 @@ footer {
     padding-top: 3em; }
     footer ul li a {
       text-decoration: none; }
+    footer ul li:hover {
+      background-color: #47c3cd; }
   footer .footer {
     display: flex;
     justify-content: center; }
@@ -319,6 +371,24 @@ footer {
         border: none;
         padding: 0.3em 1em;
         background-color: #faad07; }
+
+@media only screen and (max-width: 800px) {
+  footer {
+    height: 26em; }
+    footer ul {
+      display: block;
+      text-align: center; }
+    footer .footer img {
+      position: none; }
+    footer .copy-right .copy {
+      position: relative;
+      top: 130%;
+      left: 100%;
+      display: block;
+      text-align: center; }
+    footer .copy-right .message {
+      transform: translateY(0%);
+      text-align: center; } }
 
 .gallerie {
   width: 100%;
