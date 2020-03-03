@@ -340,7 +340,9 @@ footer {
     footer ul li a {
       text-decoration: none; }
     footer ul li:hover {
-      background-color: #47c3cd; }
+      border-bottom: 0.2em solid #47c3cd;
+      border-bottom-width: thick;
+      color: #47c3cd; }
   footer .footer {
     display: flex;
     justify-content: center; }
