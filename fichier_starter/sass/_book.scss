@@ -1,7 +1,29 @@
+$color-backagents: #eddecd;
+$color-textagents: #faad07;
+$color-nomagents: #000000;
+$color-title: #92704d;
+$color-logo: #d1b58a;
+$color-lorem: #896749;
+$color-fons: #ffffff;
+
+
+@mixin btn {
+    background:linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
+    padding: 1em 5em;
+    font-weight: bold;
+    border-radius: 10px;
+    left: 10%;
+    position: relative;
+    transform: translateX(-50%);
+    margin-top: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
 .ouma{
     .grids{
         display: grid;
-      grid-template-columns: repeat(1, 100%);
+        grid-template-columns: repeat(1, 100%);
         .grid{
             &__pict{
                 img{
@@ -9,6 +31,20 @@
                     
                 }
             }
+            &__text{
+            h2{
+                font-weight: lighter;
+                color: $color-title;
+            }
+            h3{
+                font-weight: lighter;
+            }
+           
+            }
+            &__btn{
+                @include btn();
+            }
+            
         }
     }
 }
