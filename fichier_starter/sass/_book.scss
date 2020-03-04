@@ -6,61 +6,91 @@ $color-logo: #d1b58a;
 $color-lorem: #896749;
 $color-fons: #ffffff;
 
-
 @mixin btn {
-    background:linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
-    padding: 1em 5em;
-    font-weight: bold;
-    border-radius: 10px;
-    left: 10%;
-    position: relative;
-    transform: translateX(-50%);
-    margin-top: 2rem;
-    color: white;
-    cursor: pointer;
+  background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
+  padding: 1em 5em;
+  font-weight: bold;
+  border-radius: 10px;
+  left: 10%;
+  position: relative;
+  transform: translateX(-50%);
+  margin-top: 2rem;
+  color: white;
+  cursor: pointer;
 }
 
-.ouma{
-    text-align: center;
-    padding: 1rem;
-    .grids{
-        display: grid;
-        grid-template-columns: repeat(1, 100%);
-        .grid{
-            &__pict{
-                img{
-                    width: 30rem;
-                    box-shadow: 8px 4px 17px -7px rgba(255, 199, 110, 1);
-                }
-                
-            }
-            &__text{
-                padding-left: 10rem;
-                padding-top: 3rem;
-            h2{
-                text-align: start;
-                font-weight: lighter;
-                color: $color-title;
-            }
-            h3{
-                text-align: start;
-                font-weight: lighter;
-            }
-            }
-            .para{
-                display: grid;
-                grid-template-columns: repeat(2,50%);
-                column-gap: 5rem;
-                width:30rem;
-                line-height: 2rem;
-                
-            }
-            &__btn{
-                @include btn();
-                transform: translateX(0%);
-                left: 0%;
-            }
-            
+.ouma {
+  text-align: center;
+  padding: 1rem;
+  //add
+
+  
+  .grids {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    position: relative;
+    // bottom:-100vw;
+    // right: -100vh;
+    
+    //@include
+    z-index: 2;
+    background-color: red;
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.75s ease-in-out;
+    bottom: 0;
+    right: 0;
+
+    &:targete {
+        visibility: visible;
+        opacity: 1;
+      } 
+    // z-index: 2;
+    // background-color: red;
+    // visibility: hidden;
+    // overflow: hidden;
+    // opacity: 0;
+    // transition: 0.75s ease-in-out;
+    .grid {
+        transform: rotate(32deg);
+    transition: 0.75s ease-in-out;
+      &__pict {
+        img {
+          width: 30rem;
+          box-shadow: 8px 4px 17px -7px rgba(255, 199, 110, 1);
+          overflow: hidden;
         }
+      }
+      &__text {
+        padding-left: 10rem;
+        padding-top: 3rem;
+        h2 {
+          text-align: start;
+          font-weight: lighter;
+          color: $color-title;
+        }
+        h3 {
+          text-align: start;
+          font-weight: lighter;
+        }
+      }
+      .para {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        column-gap: 5rem;
+        width: 30rem;
+        line-height: 2rem;
+      }
+      &__btn {
+        @include btn();
+        transform: translateX(0%);
+        left: 0%;
+      }
     }
+  }
+}
+
+.ouma:targete .grid{
+
 }
