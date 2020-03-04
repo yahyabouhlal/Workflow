@@ -551,9 +551,13 @@ h1 {
       position: relative;
       top: 0.5em;
       width: 45%; }
+    .grid__title--logos div {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 1.5em; }
     .grid__title--logos img {
-      text-align-last: justify;
-      padding-bottom: 5.5em; }
+      width: 15%;
+      height: 3em; }
   .grid__agents {
     grid-area: 1 / 5 / 4 / 6;
     background-color: #eddecd;
@@ -577,6 +581,54 @@ h1 {
       width: 120px;
       height: 100px; }
 
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; }
+  .contact img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover; }
+  .contact__right {
+    grid-area: 1 / 2 / 2 / 3; }
+    .contact__right img {
+      width: 100%;
+      height: 33.25;
+      object-fit: cover; }
+  .contact__left {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #000000;
+    height: 33.25; }
+    .contact__left h2 {
+      font-size: 4vw;
+      line-height: 2em; }
+    .contact__left--info {
+      margin-left: 2em;
+      line-height: 4em; }
+      .contact__left--info textarea {
+        width: 30vw; }
+    .contact__left .chek {
+      line-height: 4em;
+      margin-left: 2em; }
+    .contact__left .checkbox {
+      margin-right: 1em; }
+    .contact__left .btn {
+      background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
+      border: none;
+      width: 20%;
+      padding: 1em 0em;
+      font-weight: bold;
+      border-radius: 10px;
+      left: 10%;
+      position: relative;
+      transform: translateX(-50%);
+      margin-top: 2rem;
+      color: white;
+      cursor: pointer;
+      margin-left: 2em; }
+
 @media only screen and (max-width: 800px) {
   .grid {
     grid-template-columns: repeat(4, 1fr); }
@@ -590,6 +642,4 @@ h1 {
         font-size: 30px;
         padding-bottom: 1em; }
       .grid__title p {
-        font-size: 25px; }
-    .grid__title--logos img {
-      text-align-last: justify; } }
+        font-size: 25px; } }
