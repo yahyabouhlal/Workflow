@@ -1,0 +1,15 @@
+.container {
+    display: grid;
+    grid-template-columns: 5% auto;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(200px, auto);
+    
+  }
+
+  .container>div {
+    
+  }
+  .aside {
+    grid-row-start: 1;
+    grid-row-end: 6;
+  }
