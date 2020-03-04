@@ -435,36 +435,52 @@ h1 {
   padding: 1rem; }
   .ouma .grids {
     display: grid;
-    grid-template-columns: repeat(1, 100%); }
-    .ouma .grids .grid__pict img {
-      width: 30rem;
-      box-shadow: 8px 4px 17px -7px #ffc76e; }
-    .ouma .grids .grid__text {
-      padding-left: 10rem;
-      padding-top: 3rem; }
-      .ouma .grids .grid__text h2 {
-        text-align: start;
-        font-weight: lighter;
-        color: #92704d; }
-      .ouma .grids .grid__text h3 {
-        text-align: start;
-        font-weight: lighter; }
-    .ouma .grids .grid .para {
-      display: grid;
-      grid-template-columns: repeat(2, 50%);
-      column-gap: 5rem;
-      width: 30rem;
-      line-height: 2rem; }
-    .ouma .grids .grid__btn {
-      background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
-      padding: 1em 5em;
-      font-weight: bold;
-      border-radius: 10px;
-      left: 10%;
-      position: relative;
-      transform: translateX(-50%);
-      margin-top: 2rem;
-      color: white;
-      cursor: pointer;
-      transform: translateX(0%);
-      left: 0%; }
+    grid-template-columns: repeat(1, 100%);
+    position: relative;
+    z-index: 2;
+    background-color: red;
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.75s ease-in-out;
+    bottom: 0;
+    right: 0; }
+    .ouma .grids:targete {
+      visibility: visible;
+      opacity: 1; }
+    .ouma .grids .grid {
+      transform: rotate(32deg);
+      transition: 0.75s ease-in-out; }
+      .ouma .grids .grid__pict img {
+        width: 30rem;
+        box-shadow: 8px 4px 17px -7px #ffc76e;
+        overflow: hidden; }
+      .ouma .grids .grid__text {
+        padding-left: 10rem;
+        padding-top: 3rem; }
+        .ouma .grids .grid__text h2 {
+          text-align: start;
+          font-weight: lighter;
+          color: #92704d; }
+        .ouma .grids .grid__text h3 {
+          text-align: start;
+          font-weight: lighter; }
+      .ouma .grids .grid .para {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        column-gap: 5rem;
+        width: 30rem;
+        line-height: 2rem; }
+      .ouma .grids .grid__btn {
+        background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
+        padding: 1em 5em;
+        font-weight: bold;
+        border-radius: 10px;
+        left: 10%;
+        position: relative;
+        transform: translateX(-50%);
+        margin-top: 2rem;
+        color: white;
+        cursor: pointer;
+        transform: translateX(0%);
+        left: 0%; }
