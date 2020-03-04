@@ -83,6 +83,7 @@ $color-fons: #ffffff;
             text-transform: uppercase;
         }
         h4.no-span {
+            margin-bottom: 1em;
             display: table;
             white-space: nowrap;
           }
@@ -95,11 +96,16 @@ $color-fons: #ffffff;
             position: relative;
             top: 0.5em;
             width: 45%;
-        }  
+        } 
+        div{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 1.5em;
+        }
         img{
             width: 15%;
             height: 3em;
-            padding: 3.3em;
+            
             
         }
 
@@ -110,15 +116,18 @@ $color-fons: #ffffff;
         height: 500px;
         
         
+        
         h2{
             text-align: center;
-            margin-bottom: .5em;
+            margin-top: 0em;
             color: $color-textagents;
             
         }
         h3{
+            
             text-align: center;
             color: $color-textagents;
+            margin-top: 1em;
         }
         p{
             text-align: center;
@@ -149,29 +158,28 @@ $color-fons: #ffffff;
        }
        &__title{
         text-align: center;
-        margin: 0;
-        margin-top: 3em;
+        margin: 2em;
+        
+        
         h1{
-            font-size: 30px;
+            font-size: 40px;
+            
         }
         p{
-            font-size: 20px;
+            font-size: 26px;
+            
+            
         }
 
         }
-        &__title--logos{
-            img{
-                padding: 2.1em;
 
-
-            }
-        }
         
         
        } 
 
         
     }
+
     
     
     
