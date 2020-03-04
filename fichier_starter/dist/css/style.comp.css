@@ -564,14 +564,15 @@ h1 {
       color: #faad07; }
     .grid__agents h3 {
       text-align: center;
-      color: #faad07; }
+      color: #faad07;
+      margin-top: 1em; }
     .grid__agents p {
       text-align: center;
       color: #000000; }
   .grid__agents--realtors {
     display: grid;
     justify-content: center;
-    grid-row-gap: 0em; }
+    grid-row-gap: 1em; }
     .grid__agents--realtors img {
       width: 120px;
       height: 100px; }

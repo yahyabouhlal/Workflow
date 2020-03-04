@@ -119,6 +119,7 @@ $color-fons: #ffffff;
         h3{
             text-align: center;
             color: $color-textagents;
+            margin-top: 1em;
         }
         p{
             text-align: center;
@@ -129,7 +130,7 @@ $color-fons: #ffffff;
     &__agents--realtors{
         display: grid;
         justify-content: center;
-        grid-row-gap: 0em;
+        grid-row-gap: 1em;
         
         img{
         width: 120px;
