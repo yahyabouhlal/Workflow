@@ -10,7 +10,8 @@ body {
   display: none; }
 
 #mmeennuu:checked ~ .menu {
-  width: 100%;
+  margin: auto;
+  width: 99.6%;
   border-radius: 5px;
   background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
   height: 100%;
@@ -20,7 +21,7 @@ body {
     display: grid;
     text-align: center;
     opacity: 1;
-    margin: 10% 30% 20% 30%; }
+    margin: 7% 30% 20% 30%; }
   #mmeennuu:checked ~ .menu > .barry {
     display: none; }
 
@@ -53,7 +54,8 @@ body {
       text-decoration: none;
       display: inline-block;
       color: #0f0f0f;
-      font-size: 30px; }
+      font-size: 30px;
+      margin-top: 7px; }
       .menu li a:hover {
         border-radius: 30px;
         background-color: #47c3cd; }

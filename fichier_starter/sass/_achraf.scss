@@ -18,13 +18,14 @@ body {
 }
 
 #mmeennuu:checked ~ .menu {
-
-	width:100%;
+    margin: auto;
+	width: 99.6%;
 	border-radius:5px;
     background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
 	height:100%;
 	position: absolute;
 		z-index: 2;
+		
 		// border: none;
 		
 	
@@ -33,7 +34,7 @@ body {
 		display:grid;
 		text-align: center;
 		opacity:1;
-		margin:10% 30% 20% 30%;
+		margin:7% 30% 20% 30%;
 		
 	}
 	&>.barry {
@@ -81,6 +82,7 @@ body {
 				display:inline-block;
 				color:$noir;
 				font-size:30px;
+				margin-top: 7px;
 				
 				
 
