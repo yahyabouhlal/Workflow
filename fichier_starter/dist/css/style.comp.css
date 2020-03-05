@@ -448,34 +448,51 @@ h1 {
   .gallerie {
     grid-template: "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px; } }
 
-.ouma {
+#model {
   text-align: center;
-  padding: 1rem; }
-  .ouma .grids {
+  padding: 1rem;
+  width: 97.7%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5S; }
+  #model:target {
+    opacity: 1;
+    visibility: visible; }
+  #model .modal {
     display: grid;
-    grid-template-columns: repeat(1, 100%);
-    position: relative; }
-    .ouma .grids .grid__pict img {
+    grid-template-columns: repeat(2, 50%);
+    background-color: white;
+    width: 100%;
+    height: 100%; }
+    #model .modal__heading img {
       width: 30rem;
       box-shadow: 8px 4px 17px -7px #ffc76e;
       overflow: hidden; }
-    .ouma .grids .grid__text {
-      padding-left: 10rem;
+    #model .modal__paragraph {
+      padding-left: 5rem;
       padding-top: 3rem; }
-      .ouma .grids .grid__text h2 {
+      #model .modal__paragraph h2 {
         text-align: start;
         font-weight: lighter;
         color: #92704d; }
-      .ouma .grids .grid__text h3 {
+      #model .modal__paragraph h3 {
         text-align: start;
         font-weight: lighter; }
-    .ouma .grids .grid .para {
+    #model .modal__para {
       display: grid;
       grid-template-columns: repeat(2, 50%);
       column-gap: 5rem;
       width: 30rem;
       line-height: 2rem; }
-    .ouma .grids .grid__btn {
+      #model .modal__para--text {
+        color: chartreuse; }
+    #model .modal__btn {
       background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
       padding: 1em 5em;
       font-weight: bold;
