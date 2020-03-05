@@ -32,12 +32,12 @@ body {
   height: 100%;
   position: absolute;
   z-index: 2; }
-  #mmeennuu:checked ~ .menu > ul {
+  #mmeennuu:checked ~ .menu ul {
     display: grid;
     text-align: center;
     opacity: 1;
     margin: 7% 30% 20% 30%; }
-  #mmeennuu:checked ~ .menu > .barry {
+  #mmeennuu:checked ~ .menu .barry {
     display: none; }
 
 .menu {
@@ -321,6 +321,8 @@ body {
       transition: transform 1s; }
       .ziko__grid--maison img:hover {
         transform: scale(1.2); }
+    .ziko__grid--maison ul li h3 {
+      padding-bottom: 1em; }
     .ziko__grid--maison .name {
       background-color: #faad07;
       transform: translate(50%, -50%);
