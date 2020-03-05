@@ -321,6 +321,8 @@ body {
       transition: transform 1s; }
       .ziko__grid--maison img:hover {
         transform: scale(1.2); }
+    .ziko__grid--maison ul li h3 {
+      padding-bottom: 1em; }
     .ziko__grid--maison .name {
       background-color: #faad07;
       transform: translate(50%, -50%);
