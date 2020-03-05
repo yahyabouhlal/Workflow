@@ -514,6 +514,23 @@ h1 {
       transform: translateX(0%);
       left: 0%; }
 
+.modal {
+  display: grid;
+  grid-template-columns: repeat(1, 100%); }
+  .modal__heading img {
+    padding: 1em 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 8px 4px 17px -7px #ffc76e;
+    overflow: hidden; }
+  .modal__para {
+    grid-template-columns: repeat(1, 100%);
+    width: 80%;
+    line-height: 2rem; }
+    .modal__para--text {
+      padding: 1rem; }
+
 .logo {
   display: grid;
   justify-items: center;
