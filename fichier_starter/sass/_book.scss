@@ -93,3 +93,31 @@ $color-fons: #ffffff;
     }
   }
 }
+
+.modal {
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  &__heading {
+    img {
+      padding: 1em 0;
+      position: relative;
+      top:50%;
+      transform: translateY(-50%);
+      box-shadow: 8px 4px 17px -7px rgba(255, 199, 110, 1);
+      overflow: hidden;
+    }
+  }
+
+  &__para {
+    grid-template-columns: repeat(1, 100%);
+    
+    width: 80%;
+    line-height: 2rem;
+
+    &--text {
+      padding: 1rem;
+      
+    }
+  }
+  
+}
