@@ -19,64 +19,77 @@ $color-fons: #ffffff;
   cursor: pointer;
 }
 
-.ouma {
+#model {
   text-align: center;
   padding: 1rem;
-  //add
+  width: 97.7%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5S;
+  &:target{
+    opacity: 1;
+    visibility: visible;
+  }
 
-  
-  .grids {
+  .modal {
     display: grid;
-    grid-template-columns: repeat(1, 100%);
-    position: relative;
-    // bottom:-100vw;
-    // right: -100vh;
-    
-    //@include
-  
-   
-    // z-index: 2;
-    // background-color: red;
-    // visibility: hidden;
-    // overflow: hidden;
-    // opacity: 0;
-    // transition: 0.75s ease-in-out;
-    .grid {
+    grid-template-columns: repeat(2, 50%);
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    border-radius: 3em;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    &__heading {
+      img {
+        padding: 1em 0;
+        width: 50%;
+        box-shadow: 8px 4px 17px -7px rgba(255, 199, 110, 1);
+        overflow: hidden;
+      }
+    }
+
+    &__paragraph {
+      padding-left: 0rem;
+      padding-top: 3rem;
+      h2 {
+        text-align: start;
+        font-weight: lighter;
+        color: $color-title;
+      }
+
+      h3 {
+        text-align: start;
+        font-weight: lighter;
+      }
+    }
+
+    &__para {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      column-gap: 5rem;
+      width: 30rem;
+      line-height: 2rem;
+
+      &--text {
+        padding: 1rem;
         
-      &__pict {
-        img {
-          width: 30rem;
-          box-shadow: 8px 4px 17px -7px rgba(255, 199, 110, 1);
-          overflow: hidden;
-        }
       }
-      &__text {
-        padding-left: 10rem;
-        padding-top: 3rem;
-        h2 {
-          text-align: start;
-          font-weight: lighter;
-          color: $color-title;
-        }
-        h3 {
-          text-align: start;
-          font-weight: lighter;
-        }
-      }
-      .para {
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        column-gap: 5rem;
-        width: 30rem;
-        line-height: 2rem;
-      }
-      &__btn {
-        @include btn();
-        transform: translateX(0%);
-        left: 0%;
-      }
+    }
+
+    &__btn {
+      @include btn();
+      transform: translateX(0%);
+      left: 0%;
     }
   }
 }
-
-
