@@ -27,12 +27,12 @@ body {
   height: 100%;
   position: absolute;
   z-index: 2; }
-  #mmeennuu:checked ~ .menu > ul {
+  #mmeennuu:checked ~ .menu ul {
     display: grid;
     text-align: center;
     opacity: 1;
     margin: 7% 30% 20% 30%; }
-  #mmeennuu:checked ~ .menu > .barry {
+  #mmeennuu:checked ~ .menu .barry {
     display: none; }
 
 .menu {
