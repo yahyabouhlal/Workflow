@@ -167,33 +167,57 @@ $color-fons: #ffffff;
         &__left{
             grid-area: 1 / 1 / 2 / 2;
             background-color: $color-nomagents;
-            height: 33.25;
+            
             
             h2{
                 font-size: 4vw;
-                line-height: 2em;
+                line-height: 10vw;
             }
             &--info{
-                margin-left: 2em;
-                line-height: 4em;
+                margin-left: 2vw;
+                line-height: 6VW;
                textarea{
                    width: 30vw;
                }
             }
             .chek{
                 line-height: 4em;
-                margin-left: 2em;
+                margin-left: 2vw;
 
             }
             .checkbox{
-                margin-right: 1em;
+                margin-right: 1vw;
             }
             .btn{
                 @include btn;
-                margin-left: 2em;
+                margin-left: 2vw;
             }
         }
         }
+
+        @media only screen and (max-width: 800px){
+            .contact{
+            grid-template-columns: repeat(1, 1fr);
+            &__right{
+                display: none;
+            }
+            &__left{
+                text-align: center;
+                
+                &--info{
+                    
+                    textarea{
+                        width: 40vw;
+                    }
+                }
+                .btn{
+                    margin-bottom: 4vw;
+                }
+
+
+            }
+        }
+    }
 
         
         
