@@ -31,8 +31,8 @@ $color-fons: #ffffff;
   background: rgba(0, 0, 0, 0.6);
   opacity: 0;
   visibility: hidden;
-  transition: all .5S;
-  &:target{
+  transition: all 0.5s;
+  &:target {
     opacity: 1;
     visibility: visible;
   }
@@ -45,9 +45,9 @@ $color-fons: #ffffff;
     height: 80%;
     border-radius: 3em;
     position: absolute;
-    left:50%;
+    left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 
     &__heading {
       img {
@@ -82,7 +82,6 @@ $color-fons: #ffffff;
 
       &--text {
         padding: 1rem;
-        
       }
     }
 
@@ -101,7 +100,7 @@ $color-fons: #ffffff;
     img {
       padding: 1em 0;
       position: relative;
-      top:50%;
+      top: 50%;
       transform: translateY(-50%);
       box-shadow: 8px 4px 17px -7px rgba(255, 199, 110, 1);
       overflow: hidden;
@@ -110,14 +109,12 @@ $color-fons: #ffffff;
 
   &__para {
     grid-template-columns: repeat(1, 100%);
-    
+
     width: 80%;
     line-height: 2rem;
 
     &--text {
       padding: 1rem;
-      
     }
   }
-  
 }
