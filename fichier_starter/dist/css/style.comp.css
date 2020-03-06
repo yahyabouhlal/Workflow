@@ -421,17 +421,17 @@ footer {
   grid-auto-flow: dense;
   grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh  "1fr 1fr 1fr 1fr 1fr" 33.33vh;
   grid-gap: 5px; }
+  .gallerie .box {
+    overflow: hidden; }
+    .gallerie .box img {
+      transition: transform 1s;
+      width: 100%;
+      height: 100%; }
 
 h1 {
   font-size: 4rem;
   font-family: "Nunito";
   color: #faad07; }
-
-.gallerie .box {
-  overflow: hidden; }
-
-.gallerie .box img {
-  transition: transform 1s; }
 
 .gallerie .box:hover img {
   transform: scale(1.2); }
@@ -441,10 +441,6 @@ h1 {
 .gallerie .box.h,
 .gallerie .box.j {
   grid-column: span 2; }
-
-.gallerie .box img {
-  width: 100%;
-  height: 100%; }
 
 @media (max-width: 800px) {
   .gallerie {
@@ -520,7 +516,7 @@ h1 {
   .modal__heading img {
     padding: 1em 0;
     position: relative;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
     box-shadow: 8px 4px 17px -7px #ffc76e;
     overflow: hidden; }
@@ -530,6 +526,15 @@ h1 {
     line-height: 2rem; }
     .modal__para--text {
       padding: 1rem; }
+
+@media (max-width: 1099px) {
+  #model .modal__para {
+    display: grid;
+    grid-template-columns: repeat(1, 50%); }
+  #none {
+    display: none; }
+  button {
+    margin-bottom: 1em; } }
 
 .logo {
   display: grid;
