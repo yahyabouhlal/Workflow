@@ -118,3 +118,18 @@ $color-fons: #ffffff;
     }
   }
 }
+  
+
+@media  (max-width: 1099px){
+  #model .modal__para{
+    display: grid;
+    grid-template-columns: repeat(1, 50%);
+    
+  }
+ #none{
+   display: none;
+ }
+ button{
+   margin-bottom: 1em;
+ }
+}
