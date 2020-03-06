@@ -6,7 +6,6 @@
   display: grid;
   grid-template-columns: 5% auto;
   grid-gap: 1em;
-  grid-auto-rows: minmax(200px, auto);
   background-color: whitesmoke; }
 
 .aside {
@@ -448,10 +447,9 @@ h1 {
 
 #model {
   text-align: center;
-  padding: 1rem;
-  width: 97.7%;
+  width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 10;
@@ -527,14 +525,26 @@ h1 {
     .modal__para--text {
       padding: 1rem; }
 
-@media (max-width: 1099px) {
-  #model .modal__para {
-    display: grid;
-    grid-template-columns: repeat(1, 50%); }
-  #none {
+@media only screen and (max-width: 800px) {
+  .modal__heading {
     display: none; }
-  button {
-    margin-bottom: 1em; } }
+  #model .modal {
+    padding-top: 3em; }
+    #model .modal__btn {
+      position: relative;
+      left: 50%; }
+    #model .modal__paragraph h2 {
+      text-align: start;
+      font-weight: lighter;
+      color: #92704d;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute; }
+    #model .modal__paragraph h3 {
+      font-weight: lighter;
+      position: relative;
+      left: 50%;
+      padding-top: 2em; } }
 
 .logo {
   display: grid;
