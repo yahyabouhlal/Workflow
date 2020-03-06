@@ -101,7 +101,7 @@ $color-fons: #ffffff;
     img {
       padding: 1em 0;
       position: relative;
-      top:50%;
+      top:30%;
       transform: translateY(-50%);
       box-shadow: 8px 4px 17px -7px rgba(255, 199, 110, 1);
       overflow: hidden;
@@ -120,4 +120,17 @@ $color-fons: #ffffff;
     }
   }
   
+}
+@media  (max-width: 1099px){
+  #model .modal__para{
+    display: grid;
+    grid-template-columns: repeat(1, 50%);
+    
+  }
+ #none{
+   display: none;
+ }
+ button{
+   margin-bottom: 1em;
+ }
 }
