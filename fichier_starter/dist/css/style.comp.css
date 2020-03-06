@@ -516,7 +516,7 @@ h1 {
   .modal__heading img {
     padding: 1em 0;
     position: relative;
-    top: 30%;
+    top: 50%;
     transform: translateY(-50%);
     box-shadow: 8px 4px 17px -7px #ffc76e;
     overflow: hidden; }
