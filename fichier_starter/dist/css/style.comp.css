@@ -160,7 +160,7 @@ body {
     .grid__agents h3 {
       text-align: center;
       color: #faad07;
-      margin-top: 1em; }
+      margin-top: 0.5em; }
     .grid__agents p {
       text-align: center;
       color: #000000; }
@@ -621,12 +621,12 @@ h1 {
     height: 500px; }
     .grid__agents h2 {
       text-align: center;
-      margin-bottom: .5em;
+      margin-bottom: 0em;
       color: #faad07; }
     .grid__agents h3 {
       text-align: center;
       color: #faad07;
-      margin-top: 1em; }
+      margin-top: 0.5em; }
     .grid__agents p {
       text-align: center;
       color: #000000; }
