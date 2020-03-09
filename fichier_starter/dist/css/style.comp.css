@@ -403,10 +403,11 @@ footer {
       display: block;
       text-align: center; }
     footer .footer img {
-      position: none; }
+      position: none;
+      padding-top: 2em; }
     footer .copy-right .copy {
       position: relative;
-      top: 130%;
+      top: 87%;
       left: 100%;
       display: block;
       text-align: center; }
