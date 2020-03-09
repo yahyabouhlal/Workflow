@@ -1,0 +1,152 @@
+@mixin btn {
+    background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
+    border: none;
+    width: 20%;
+    padding: 1em 0em;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #ouma {
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 33.33%);
+      .card {
+        display: flex;
+        padding: 3em;
+  
+        &:hover {
+          background-color: #cdcb76;
+          border-radius: 20px;
+          
+        }
+  
+        &__icon {
+          font-size: 3em;
+          padding-right: 0.6em;
+          padding-bottom: 1em
+          
+        }
+  
+        &__content {
+          font-size: 1em;
+          padding-top: 1em;
+          text-align: center;
+        }
+      }
+    }
+  
+    .storys {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      &__pict {
+        h1 {
+          justify-content: start;
+          display: flex;
+          padding-bottom: 0.4em;
+        }
+        img {
+          width: 50%;
+          box-shadow: 8px 4px 17px -7px rgba(255, 199, 110, 1);
+          position: relative;
+          left: 5em;
+        }
+        &--img1 {
+          transition: transform 1s;
+          &:hover {
+            transform: scale(1.2);
+            border: solid 2px #47c3cd;
+            border-radius: 10px;
+            z-index:1;
+          }
+        }
+        &--img2 {
+          margin-top: -12%;
+          margin-left: 23%;
+          transition: transform 1s;
+          &:hover {
+            transform: scale(1.2);
+            border: solid 2px #47c3cd;
+            border-radius: 10px;
+          }
+        }
+      }
+  
+      &__text {
+        width: 80%;
+        position: relative;
+        top: 40%;
+        // transform: translateY(-50%);
+        h2 {
+          padding-bottom: 1em;
+          text-align: center;
+        }
+        p {
+          text-align: center;
+          line-height: 2em;
+        }
+        button {
+          @include btn();
+          position: relative;
+          transform: translateX(-50%);
+          left: 50%;
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    #ouma {
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        .card {
+          display: flex;
+          padding: 3em;
+  
+          &__icon {
+            font-size: 3em;
+            padding-right: 0.6em;
+            padding-bottom: 1em;
+          }
+  
+          &__content {
+            font-size: 1em;
+            padding-top: 1em;
+            text-align: center;
+          }
+        }
+      }
+  
+      .storys {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        &__pict {
+          text-align: center;
+          
+          img {
+            left: 0em;
+          }
+        }
+  
+        &__text {
+          text-align: center;
+          position: relative;
+          transform: translateX(-50%);
+          top: 2em;
+          left: 50%;
+          padding-bottom: 9em;
+          button {
+            @include btn();
+  
+            transform: translateX(0%);
+            left: 0%;
+          }
+        }
+      }
+    }
+  }
+  
