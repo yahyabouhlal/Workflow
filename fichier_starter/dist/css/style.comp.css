@@ -326,20 +326,20 @@ body {
       transition: transform 1s; }
       .ziko__grid--maison img:hover {
         transform: scale(1.2); }
-    .ziko__grid--maison ul li h3 {
-      padding-bottom: 1em; }
+    .ziko__grid--maison .firstLine {
+      display: flex;
+      justify-content: space-between;
+      padding: 1em 2em; }
+    .ziko__grid--maison .secondtLine {
+      display: flex;
+      justify-content: space-between;
+      padding: 1em 2em; }
     .ziko__grid--maison .name {
       background-color: #faad07;
       transform: translate(50%, -50%);
       width: 50%;
       padding: .4em 0; }
       .ziko__grid--maison .name p {
-        color: white; }
-    .ziko__grid--maison ul {
-      padding: 0; }
-      .ziko__grid--maison ul li {
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
         color: white; }
     .ziko__grid--maison button {
       background-color: #faad07;
@@ -353,7 +353,13 @@ body {
   .ziko__grid {
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    text-align: center; } }
+    text-align: center; }
+    .ziko__grid--maison .firstLine {
+      padding: 1em 0em; }
+    .ziko__grid--maison .secondtLine {
+      padding: 1em 0em; }
+  .firstLine {
+    padding: 1em 0em; } }
 
 footer {
   background-color: #eddecd;
