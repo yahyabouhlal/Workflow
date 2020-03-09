@@ -16,6 +16,9 @@ body {
   margin: 0;
   padding: 0; }
 
+.container {
+  position: fixed; }
+
 * {
   font-family: Helvetica,sans-serif;
   color: #555; }
@@ -28,6 +31,7 @@ body {
   width: 99.6%;
   border-radius: 5px;
   background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
+  opacity: 90%;
   height: 100%;
   position: absolute;
   z-index: 2; }
