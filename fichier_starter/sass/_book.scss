@@ -12,6 +12,7 @@ $color-fons: #ffffff;
   font-weight: bold;
   border-radius: 10px;
   left: 10%;
+
   position: relative;
   transform: translateX(-50%);
   margin-top: 2rem;
@@ -50,10 +51,10 @@ $color-fons: #ffffff;
 
     &__heading {
       img {
-        padding: 1em 0;
-        width: 50%;
+        padding: 2em 0;
+        width: 47%;
         box-shadow: 8px 4px 17px -7px rgba(255, 199, 110, 1);
-        overflow: hidden;
+        overflow: hidden;  
       }
     }
 
@@ -76,7 +77,7 @@ $color-fons: #ffffff;
       display: grid;
       grid-template-columns: repeat(2, 50%);
       column-gap: 5rem;
-      width: 30rem;
+      width: 80%;
       line-height: 2rem;
 
       &--text {
@@ -124,13 +125,24 @@ $color-fons: #ffffff;
     &__heading {
       display: none;
     }
+    &__para {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      column-gap: 5rem;
+      position: absolute;
+      
+    }
   }
 
   #model .modal {
     padding-top: 3em;
     &__btn{
       position: relative;
-        left: 50%;
+      &__btn {
+        @include btn();
+        transform: translateX(0%);
+        left: 0%;
+      }
     }
     &__paragraph {
       h2 {
@@ -150,4 +162,10 @@ $color-fons: #ffffff;
     }
     
   }
+
+  #model .modal__btn {
+    position: relative;
+    margin-top: 150%;
+    left:50%
+}
 }
