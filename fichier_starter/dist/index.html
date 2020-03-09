@@ -13,116 +13,79 @@
 
   <title>CLASS1 &mdash; First-app</title>
 </head>
-<style>
-  * {
-    margin: 0;
-    padding: 0;
 
 
-  }
+<body>
+  <container class="container">
+    <!-- ayoub -->
+    <div class=header>
+      <header class="grid">
+        <div class="grid__back">
+          <img src="img/back.jpg">
+        </div>
+        <div class="logo">
+          <img src="img/logo.png">
+        </div>
+        <div class="grid__title">
 
-  header {
-    position: absolute;
-    top: 0;
-    left: 80px;
-    background-color: yellow;
-    width: 95%;
-    height: 500px;
-  }
+          <h1>la maison des rêves</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <a href="/fichier_starter/dist/contact.html"><button class="grid__title--btn">
+              <i class="far fa-eye"></i> View</button></a>
+        </div>
+        <div class="grid__title--logos">
+          <h4 class="no-span">nous fons confiance</h4>
+          <div>
+            <img src="img/logo-bbc.png">
+            <img src="img/logo-bi.png">
+            <img src="img/logo-forbes.png">
+            <img src="img/logo-techcrunch.png">
+          </div>
+        </div>
+        <div class="grid__agents">
+          <h2>agents</h2>
+          <H3>top3</h3>
+          <div class="grid__agents--realtors">
+            <img src="img/realtor-1.jpeg">
+            <p>yahya</p>
+            <img src="img/realtor-2.jpeg">
+            <p>oumaima</p>
+            <img src="img/realtor-3.jpeg">
+            <p>ziko</p>
+          </div>
 
-  aside {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: orangered;
-    width: 5%;
-    height: 3000px;
+      </header>
 
-  }
+      </header>
 
-  section {
-
-    position: absolute;
-    top: 500px;
-    left: 80px;
-    background-color: blue;
-    width: 95%;
-    height: 2500px;
-  }
-
-  footer {
-    position: absolute;
-    top: 2500px;
-    left: 80px;
-    background-color: cyan;
-    width: 95%;
-    height: 500px;
-  }
-</style>
-
-<body class="container">
-  <!-- Ayoube essafi -->
-  <header class="grid">
-    <div class="logo">
-      <img src="/fichier_starter/dist/img/logo.png">
     </div>
-    <div class="grid__title">
+    <!-- achraf -->
+    <div class=aside>
+      <aside>
+        <input type='checkbox' id='mmeennuu'>
+        <label class='menu' for='mmeennuu'>
 
-      
-      <h1>la maison des rêves</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      <button class="grid__title--btn">
-        <i class="far fa-eye"></i> View</button>
-    </div>
-    <div class="grid__title--logos">
-      <h4>nous fons confiance</h4>
-      <img src="/fichier_starter/dist/img/logo-bbc.png">
-      <img src="/fichier_starter/dist/img/logo-bi.png">
-      <img src="/fichier_starter/dist/img/logo-forbes.png">
-      <img src="/fichier_starter/dist/img/logo-techcrunch.png">
-    </div>
-    <div class="grid__agents">
-      <h2>agents</h2>
-      <H3>top3</h3>
-      <div class="grid__agents--realtors">
-        <img src="/fichier_starter/dist/img/realtor-1.jpeg">
-        <p>yahya</p>
-        <img src="/fichier_starter/dist/img/realtor-2.jpeg">
-        <p>oumaima</p>
-        <img src="/fichier_starter/dist/img/realtor-3.jpeg">
-        <p>ziko</p>
-      </div>
-    </div>
-    
+          <div class='barry'>
+            <span class='bar'></span>
+            <span class='bar'></span>
+            <span class='bar'></span>
+            <span class='bar'></span>
+          </div>
 
-  </header>
-  <!-- Achraf elhour -->
-  <aside>
-    <input type='checkbox' id='mmeennuu'>
-    <label class='menu' for='mmeennuu'>
-    
-    <div class='barry'>
-      <span class='bar'></span>
-      <span class='bar'></span>
-      <span class='bar'></span>
-      <span class='bar'></span>
-    </div>
-      
-    <ul>
-      <li><a id='home' href='#home'>Maison de réves</a></li>
-      <li><a id='about' href='#about'>Proposition</a></li>
-      <li><a id='contact' href='#contact'>Plan</a></li>
-      <li><a id='link' href='#link'>Contacter-nous</a></li>
-      <li><a id='link' href='#link'>Soumetter vous</a></li>
-      <li><a id='link' href='#link'>Nous rejoindre</a></li>
-    </ul>
-    
-    </label>
-    
+          <ul>
+            <li><a id='home' href='#'>Maison de réves</a></li>
+            <li><a id='about' href='#'>Proposition</a></li>
+            <li><a id='contact' href='#'>Plan</a></li>
+            <li><a id='link' href='contact.html'>Contacter-nous</a></li>
+            <li><a id='link' href='#'>Soumetter vous</a></li>
+            <li><a id='link' href='#'>Nous rejoindre</a></li>
+          </ul>
 
-    
-  </aside>
-  <section>
+        </label>
+      </aside>
+
+
+    </div>
     <!-- oumaima -->
     <article id="ouma">
       <h1 class="titre">FEATURES</h1>
@@ -132,16 +95,16 @@
             <i class="fas fa-globe-americas"></i>
           </div>
           <div class="card__content">
-           <div class="card__content--title">meilleurs choix des maisons</div>
+            <div class="card__content--title">meilleurs choix des maisons</div>
             <div class="card__content--parg">
               <p>Lorem Ipsum is simply dummy
-                text of the printing and 
-               typesetting industry.</p>
+                text of the printing and
+                typesetting industry.</p>
             </div>
+          </div>
+
         </div>
 
-          </div>
-          
         <div class="card">
           <div class="card__icon">
             <i class="fas fa-trophy"></i>
@@ -150,12 +113,12 @@
             <div class="card__content--title">meilleurs choix des terrains</div>
             <div class="card__content--parg">
               <p>Lorem Ipsum is simply dummy
-                text of the printing and 
-               typesetting industry.</p>
+                text of the printing and
+                typesetting industry.</p>
             </div>
           </div>
         </div>
-        
+
         <div class="card">
           <div class="card__icon">
             <i class="fas fa-map-marker-alt"></i>
@@ -164,8 +127,8 @@
             <div class="card__content--title">Emplacement de reves</div>
             <div class="card__content--parg">
               <p>Lorem Ipsum is simply dummy
-                text of the printing and 
-               typesetting industry.</p>
+                text of the printing and
+                typesetting industry.</p>
             </div>
           </div>
         </div>
@@ -175,12 +138,12 @@
             <i class="fas fa-lock"></i>
           </div>
           <div class="card__content">
-            
+
             <div class="card__content--title">meilleurs choix des maisons</div>
             <div class="card__content--parg">
               <p>Lorem Ipsum is simply dummy
-                text of the printing and 
-               typesetting industry.</p>
+                text of the printing and
+                typesetting industry.</p>
             </div>
           </div>
         </div>
@@ -191,12 +154,12 @@
             <i class="fab fa-angular"></i>
           </div>
           <div class="card__content">
-            
+
             <div class="card__content--title">meilleurs choix des terrains</div>
             <div class="card__content--parg">
               <p>Lorem Ipsum is simply dummy
-                text of the printing and 
-               typesetting industry.</p>
+                text of the printing and
+                typesetting industry.</p>
             </div>
           </div>
         </div>
@@ -207,48 +170,84 @@
           </div>
           <div class="card__content">
             <div class="card__title">
-              
+
               <div class="card__content--title">Emplacement de reves</div>
               <div class="card__content--parg">
                 <p>Lorem Ipsum is simply dummy
-                  text of the printing and 
-                 typesetting industry.</p>
+                  text of the printing and
+                  typesetting industry.</p>
               </div>
             </div>
             <div class="card__paragraph"></div>
           </div>
         </div>
-      
       </div>
       <div class="storys">
-        
+
         <div class="storys__pict">
           <h1>Story</h1>
           <img src="img/story-1.jpeg" alt="story-1" class="storys__pict storys__pict--img1">
           <img src="img/story-2.jpeg" alt="story-2" class="storys__pict storys__pict--img2">
         </div>
 
+
+
         <div class="storys__text">
           <h2>Client Heureux </h2>
-          <p>“Lorem Ipsum is simply dummy text of the
-            printing and typesetting industry. Lorem 
-           Ipsum has been the industry's standard 
-           dummy text ever since the 1500s, when an
+          <p>“Lorem Ipsum is simply dummy text o f the
+            printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when an
             unknown printer took a galley of type and
             scrambled”</p>
-            <button class="storys__btn">
-              <i class="far fa-eye"></i> View</button>
+          <a href="#model" class="modal-open"><button class="storys__btn">
+              <i class="far fa-eye"></i>
+              View </button> </a>
+ 
+
         </div>
       </div>
     </article>
-
-
-    <!-- zakaria -->
+             <!--popupe-->
+             <article id="model">
+              <div class="modal">
+                <div class="modal__heading">
+                  <img src="img/story-1.jpeg" alt="stor">
+                  <img src="img/story-2.jpeg" alt="stor">
+                </div>
+                <div class="modal__paragraph">
+                  <h2>NE TARDE PAS </h2>
+                  <h3>Lisez les termes avant de choisir</h3>
+                  <div class="modal__para">
+                    <p class="modal__para--text">“Lorem Ipsum is simply dummy text of the
+                      printing and typesetting industry. Lorem
+                      Ipsum has been the industry's standard
+                      dummy text ever since the 1500s, when an
+                      unknown printer took a galley of type and
+                      scrambled”</p>
+                    <p class="modal__para--text">“Lorem Ipsum is simply dummy text of the
+                      printing and typesetting industry. Lorem
+                      Ipsum has been the industry's standard
+                      dummy text ever since the 1500s, when an
+                      unknown printer took a galley of type and
+                      scrambled”</p>
+                  </div>
+                  <a href="/fichier_starter/dist/index.html" class="modal__paragraph--btn">
+                    <button class="modal__btn"> +BOOK NOW</button>
+                </div>
+        
+              </div>
+            </article>
+            <!--clase popupe-->
+    
     <article class="ziko">
-      <h1>Maisons</h1>
+      <h1 class="titre">Maisons</h1>
       <div class="ziko__grid">
         <div class="ziko__grid--maison">
           <img src="img/house-1.jpeg" alt="house-1">
+          <div class="name">
+            <p>Maison de Famille</p>
+          </div>
           <ul>
             <li>
               <h3><i class="fas fa-map-marker-alt"></i> Maroc</h3>
@@ -263,6 +262,9 @@
         </div>
         <div class="ziko__grid--maison">
           <img src="img/house-2.jpeg" alt="house-1">
+          <div class="name">
+            <p>Maison de Famille</p>
+          </div>
           <ul>
 
             <li>
@@ -278,6 +280,9 @@
         </div>
         <div class="ziko__grid--maison">
           <img src="img/house-3.jpeg" alt="house-1">
+          <div class="name">
+            <p>Maison de Famille</p>
+          </div>
           <ul>
             <li>
               <h3><i class="fas fa-map-marker-alt"></i> Maroc</h3>
@@ -290,8 +295,13 @@
           </ul>
           <button><i class="fas fa-phone-alt"></i>Contactez Agents</button>
         </div>
+
+
         <div class="ziko__grid--maison">
           <img src="img/house-4.jpeg" alt="house-1">
+          <div class="name">
+            <p>Maison </p>
+          </div>
           <ul>
             <li>
               <h3><i class="fas fa-map-marker-alt"></i> Maroc</h3>
@@ -306,6 +316,9 @@
         </div>
         <div class="ziko__grid--maison">
           <img src="img/house-5.jpeg" alt="house-1">
+          <div class="name">
+            <p>Maison de Famille</p>
+          </div>
           <ul>
 
             <li>
@@ -321,6 +334,9 @@
         </div>
         <div class="ziko__grid--maison">
           <img src="img/house-6.jpeg" alt="house-1">
+          <div class="name">
+            <p>Maison de Famille</p>
+          </div>
           <ul>
             <li>
               <h3><i class="fas fa-map-marker-alt"></i> Maroc</h3>
@@ -332,40 +348,58 @@
             </li>
           </ul>
           <button><i class="fas fa-phone-alt"></i>Contactez Agents</button>
+
         </div>
       </div>
     </article>
+
     <!-- yahya -->
-    <article class="yaya"></article>
-  </section>
-  <!-- ziko -->
-  <footer>
-    <ul>
-      <li><a href="">Maison de réves</a></li>
-      <li><a href="">Proposition</a></li>
-      <li><a href="">Plan</a></li>
-      <li><a href="">Contactez nous</a></li>
-      <li><a href="">Soumettez votre</a></li>
-      <li><a href="">Nous rejoindre</a></li>
-    </ul>
-    <div class="footer">
-      <img src="img/logo.png" alt="logo">
-    </div>
-    <div class="copy-right">
-      <div class="copy">
-        <p>CopyRight <a href="https://youcode.ma/">www.youcode.ma </a> ALL right reserved #CLASSE1</p>
+    <div class=galery>
+      <h1>Gallerie</h1>
+      <div class="gallerie">
+        <div class="box a"><img src="img/gal-1.jpeg" alt=""></div>
+        <div class="box b"><img src="img/gal-2.jpeg" alt=""></div>
+        <div class="box c"><img src="img/gal-3.jpeg" alt=""></div>
+        <div class="box d"><img src="img/gal-4.jpeg" alt=""></div>
+        <div class="box k"><img src="img/gal-11.jpeg" alt=""></div>
+        <div class="box e"><img src="img/gal-5.jpeg" alt=""></div>
+        <div class="box f"><img src="img/gal-6.jpeg" alt=""></div>
+        <div class="box g"><img src="img/gal-7.jpeg" alt=""></div>
+        <div class="box h"><img src="img/gal-8.jpeg" alt=""></div>
+        <div class="box i"><img src="img/gal-9.jpeg" alt=""></div>
+        <div class="box j"><img src="img/gal-10.jpeg" alt=""></div>
 
-        <div class="message">
-          <input type="text" placeholder="email">
-          <input type="button" value="Submite">
-        </div>
       </div>
+
     </div>
 
-  </footer>
+    <!-- zakaria -->
+    <div class=footer>
+      <footer>
+        <ul>
+          <li><a href="">Maison de réves</a></li>
+          <li><a href="">Proposition</a></li>
+          <li><a href="">Plan</a></li>
+          <li><a href="contact.html">Contactez nous</a></li>
+          <li><a href="">Soumettez votre</a></li>
+          <li><a href="">Nous rejoindre</a></li>
+        </ul>
+        <div class="footer">
+          <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="copy-right">
+          <div class="copy">
+            <p>CopyRight <a href="https://youcode.ma/">www.youcode.ma </a> ALL right reserved #CLASSE1</p>
 
-
-
+            <div class="message">
+              <input type="text" placeholder="email">
+              <input type="button" value="Submite">
+            </div>
+          </div>
+        </div>
+    </div>
+    </footer>
+  </container>
   <script src="js/all.js"></script>
 
 </body>

@@ -1,220 +1,112 @@
-$lred:#b4a557;
-$red:rgb(15, 15, 15);
-$bb:#47c3cd;
+$lux:#b4a557;
+$noir:rgb(15, 15, 15);
+$bleu:#47c3cd;
 
-@mixin transition($in) {
-    transition:$in;
-}
 
 body {
 	margin:0;
 	padding:0;
-	background-color:#222;
-}
-* {
+	// background-color:#222;
+	 }
+	 .container{
+		 position: fixed;
+		 position: relative;
+	 }
+*{
 	font-family:Helvetica,sans-serif;
-    color:$lred;
+	color:#555;
 }
 
 #mmeennuu {
 	display:none;
 }
 
-#mmeennuu:checked ~ .menu {
-    
-    margin:0%;
-	width:2000%;
-	border-radius:0%;
-	background:linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
-	border:3px solid $red;
-	height:25%;
+#mmeennuu:checked~.menu {
+    margin: auto;
+	width: 99.6%;
+	border-radius:5px;
+	background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
+	opacity: 90%;
+	height:100%;
+	position: absolute;
+		z-index: 2;
+		
+		// border: none;
+		
+	
 
-	&>ul {
-		display:block;
-        opacity:1;
-        
-        
+	ul {
+		position: fixed;
+		display:grid;
+		text-align: center;
+		opacity:1;
+		margin:7% 30% 20% 40%;
+		
 	}
-	&>.barry {
+	.barry {
 		display:none;
 	}
 }
 
 .menu {
+	position: fixed;
 	display:block;
-	margin:20px 15px auto;
-	width:60px;
-	height:60px;
-	background-color:$red;
-	border:1px solid transparent;
+	margin:0px 9px auto;
+	width:50px;
+	height:50px;
+	background-color:$lux;
+	border:3px solid transparent;
 	border-radius:50%;
 	overflow:hidden;
 	cursor:pointer;
-	@include transition(all 0.5s ease-in-out);
 
 	div.barry {
-
 		width:40px;
-		margin:15px auto;
+		margin:4px;
+		margin-top: 10px;
 
 
 		.bar {
 			display:block;
 			width:100%;
-			height:5px;
+			height:0.3rem;
 			margin-top:3px;
-			border-radius:2px;
+			border-radius:2rem;
 			background-color:#fff;
 		}
 	}
 
-	ul {
-        margin-top: 7%;
-		opacity:0;
-		display:none;
-		@include transition(all 0.5s ease-in-out);
-		list-style-type:none;
-		padding:0;
-		text-align:center;
-		margin-bottom: 0;
 
+		
+	
 		li {
+			display:inline-block;
 			a {
+				
+				padding: 20px;
 				text-decoration:none;
 				display:inline-block;
-				padding:1%;
-				color:$red;
-				font-size:200%;
-				@include transition(all 0.3s ease-in-out);
-				border:3px solid transparent;
-                border-radius:5px;
-            
-                
+				color:$noir;
+				font-size:30px;
+				margin-top: 7px;
+				
+				
 
 				&:hover {
-                    border-color:$red;
-                    background-color: $bb;
-                    border-radius: 20px;
+					border-radius: 30px;
+					background-color: $bleu;
 				}
 				
 				&:target {
-					// border-bottom-color:$red;
+					// border-bottom-color:$bleu;
 				}
 			}
 		}
-	}
-}
-$lred:#b4a557;
-$red:rgb(15, 15, 15);
-$bb:#47c3cd;
-
-@mixin transition($in) {
-    transition:$in;
-	-webkit-transition:$in;
-	-moz-transition:$in;
-	-o-transition:$in;
-	-ms-transition:$in;
-	
 	
 }
-
-body {
-	margin:0;
-	padding:0;
-	background-color:#222;
+@media only screen and (max-width: 900px) {
+	.menu {
+	width: 30px;
+	height:30px;
 }
-* {
-	font-family:Helvetica,sans-serif;
-    color:$lred;
-    
-    
-}
-
-#mmeennuu {
-	display:none;
-}
-
-#mmeennuu:checked ~ .menu {
-    
-    margin:0%;
-	width:2000%;
-	border-radius:0%;
-	background:linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
-	
-	height:25%;
-
-	&>ul {
-		display:block;
-        opacity:1;
-        
-        
-	}
-	&>.barry {
-		display:none;
-	}
-}
-
-.menu {
-	display:block;
-	margin:20px 15px auto;
-	width:60px;
-	height:60px;
-	background-color:$red;
-	border:1px solid transparent;
-	border-radius:50%;
-	overflow:hidden;
-	cursor:pointer;
-	@include transition(all 0.5s ease-in-out);
-
-	div.barry {
-
-		width:40px;
-		margin:15px auto;
-
-
-		.bar {
-			display:block;
-			width:100%;
-			height:5px;
-			margin-top:3px;
-			border-radius:2px;
-			background-color:#fff;
-		}
-	}
-
-	ul {
-        margin-top: 7%;
-		opacity:0;
-		display:none;
-		@include transition(all 0.5s ease-in-out);
-		list-style-type:none;
-		padding:0;
-		text-align:center;
-		margin-bottom: 0;
-
-		li {
-			a {
-				text-decoration:none;
-				display:inline-block;
-				padding:1%;
-				color:$red;
-				font-size:200%;
-				@include transition(all 0.3s ease-in-out);
-				border:3px solid transparent;
-                border-radius:5px;
-            
-                
-
-				&:hover {
-                    border-color:$red;
-                    background-color: $bb;
-                    border-radius: 20px;
-				}
-				
-				&:target {
-					// border-bottom-color:$red;
-				}
-			}
-		}
-	}
 }
