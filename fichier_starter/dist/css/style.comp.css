@@ -422,7 +422,7 @@ footer {
   width: 100%;
   display: grid;
   grid-auto-flow: dense;
-  grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh  "1fr 1fr 1fr 1fr 1fr" 33.33vh;
+  grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh;
   grid-gap: 5px; }
   .gallerie .box {
     overflow: hidden; }
