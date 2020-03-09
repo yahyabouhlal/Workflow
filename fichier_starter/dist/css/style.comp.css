@@ -160,7 +160,7 @@ body {
     .grid__agents h3 {
       text-align: center;
       color: #faad07;
-      margin-top: 1em; }
+      margin-top: 0.5em; }
     .grid__agents p {
       text-align: center;
       color: #000000; }
@@ -472,8 +472,8 @@ h1 {
     top: 50%;
     transform: translate(-50%, -50%); }
     #model .modal__heading img {
-      padding: 1em 0;
-      width: 50%;
+      padding: 2em 0;
+      width: 47%;
       box-shadow: 8px 4px 17px -7px #ffc76e;
       overflow: hidden; }
     #model .modal__paragraph {
@@ -490,7 +490,7 @@ h1 {
       display: grid;
       grid-template-columns: repeat(2, 50%);
       column-gap: 5rem;
-      width: 30rem;
+      width: 80%;
       line-height: 2rem; }
       #model .modal__para--text {
         padding: 1rem; }
@@ -528,11 +528,28 @@ h1 {
 @media only screen and (max-width: 800px) {
   .modal__heading {
     display: none; }
+  .modal__para {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 5rem;
+    position: absolute; }
   #model .modal {
     padding-top: 3em; }
     #model .modal__btn {
-      position: relative;
-      left: 50%; }
+      position: relative; }
+      #model .modal__btn__btn {
+        background: linear-gradient(#cea879, #ceb778, #cdcb76, #ccd975);
+        padding: 1em 5em;
+        font-weight: bold;
+        border-radius: 10px;
+        left: 10%;
+        position: relative;
+        transform: translateX(-50%);
+        margin-top: 2rem;
+        color: white;
+        cursor: pointer;
+        transform: translateX(0%);
+        left: 0%; }
     #model .modal__paragraph h2 {
       text-align: start;
       font-weight: lighter;
@@ -544,7 +561,11 @@ h1 {
       font-weight: lighter;
       position: relative;
       left: 50%;
-      padding-top: 2em; } }
+      padding-top: 2em; }
+  #model .modal__btn {
+    position: relative;
+    margin-top: 150%;
+    left: 50%; } }
 
 .logo {
   display: grid;
@@ -621,12 +642,12 @@ h1 {
     height: 500px; }
     .grid__agents h2 {
       text-align: center;
-      margin-bottom: .5em;
+      margin-bottom: 0em;
       color: #faad07; }
     .grid__agents h3 {
       text-align: center;
       color: #faad07;
-      margin-top: 1em; }
+      margin-top: 0.5em; }
     .grid__agents p {
       text-align: center;
       color: #000000; }
