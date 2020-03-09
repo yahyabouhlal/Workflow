@@ -17,7 +17,8 @@ body {
   padding: 0; }
 
 .container {
-  position: fixed; }
+  position: fixed;
+  position: relative; }
 
 * {
   font-family: Helvetica,sans-serif;
